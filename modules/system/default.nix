@@ -21,8 +21,8 @@
       nixosSystem {
         modules = concatLists [
           (singleton {
-            networking.hostName = hostname;
-            nixpkgs.hostPlatform = system;
+            networking.hostName = args.hostname;
+            nixpkgs.hostPlatform = args.system;
           })
 
           args.modules or []
