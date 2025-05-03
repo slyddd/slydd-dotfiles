@@ -6,8 +6,7 @@
       systems = import inputs.systems;
 
       imports = [
-        ./system
-        ./configuration.nix
+        ./modules/system
       ];
     };
 
