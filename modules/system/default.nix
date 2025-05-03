@@ -13,6 +13,8 @@
       inputs.home-manager.nixosModules.default
     ];
 
+    homeModule = self + /modules/home;
+
     makeSystem = {
       hostname,
       system,
@@ -24,7 +26,7 @@
             networking.hostName = args.hostname;
             nixpkgs.hostPlatform = args.system;
           })
-
+          externalModules
           args.modules or []
         ];
 
@@ -38,8 +40,9 @@
       system = "x86_64-linux";
       modules = [
         ./boot
+        ./config
         ./services
-        ./configuration.nix
+        homeModule
       ];
     };
   };

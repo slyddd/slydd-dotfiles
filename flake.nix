@@ -7,7 +7,6 @@
 
       imports = [
         ./modules/system
-        ./modules/home
       ];
     };
 

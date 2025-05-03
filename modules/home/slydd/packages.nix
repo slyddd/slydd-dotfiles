@@ -1,5 +1,6 @@
+{ pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     neovim
@@ -13,12 +14,11 @@
 
   programs.git = {
     enable = true;
-    config = {
+    userName = "slyddd";
+    userEmail = "dayvidnavarrete@gmail.com";
+
+    extraConfig = {
       init.defaultBranch = "main";
-      user = {
-        email = "dayvidnavarrete@gmail.com";
-        name = "slyddd";
-      };
     };
   };
 }
