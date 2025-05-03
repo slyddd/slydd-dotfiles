@@ -37,6 +37,8 @@
       hostname = "DEV2DIE";
       system = "x86_64-linux";
       modules = [
+        ./boot
+        ./services
         ./configuration.nix
       ];
     };
