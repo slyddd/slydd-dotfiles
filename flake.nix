@@ -1,32 +1,33 @@
 {
-  description = "Slydd's Aestetic Dotfiles";
+  description = "Aestetic NixOs Dotfiles Using Flakes";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = import inputs.systems;
 
-  outputs = { self, nixpkgs }:
-  let
-    system = "x86_64-linux";
-
-    pkgs = import nixpkgs {
-      inherit system;
-
-      config = {
-        allowUnfree = true;
-      };
+      imports = [
+        ./system
+        ./configuration.nix
+      ];
     };
 
-  in
-  {
-    nixosConfigurations = {
-      DEV2DIE = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit system; };
+  inputs = {
+    systems.url = "github:nix-systems/default-linux";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-        modules = [
-          ./configuration.nix
-        ];
-      };
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    pre-commit-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 }
