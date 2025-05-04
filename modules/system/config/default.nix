@@ -5,5 +5,6 @@
    ./nix.nix
    ./users.nix
    ./version.nix
+   ./fonts.nix
  ];
 }

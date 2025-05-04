@@ -13,5 +13,7 @@ in
     users = {
       slydd = import ./slydd;
     };
+
+    backupFileExtension = "nixos-unified-template-backup";
   };
 }
