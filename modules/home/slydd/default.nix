@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     neovim
-    kitty
     vivaldi
     enpass
     libreoffice
@@ -12,6 +11,7 @@
     # Configuration files
     ./zed
     ./git
+    ./kitty
 
     # Home directory configuration
     ./home.nix
