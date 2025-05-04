@@ -5,6 +5,7 @@
     kitty
     vivaldi
     enpass
+    libreoffice
   ];
 
   imports = [
