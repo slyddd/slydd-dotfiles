@@ -1,4 +1,10 @@
-{ config, lib, pkgs, modulesPath, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  ...
+}:
 
 let
   esp = "/boot";
@@ -9,40 +15,34 @@ in
   ];
 
   boot = {
-    initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod"];
+    initrd.availableKernelModules = [
+      "xhci_pci"
+      "ahci"
+      "usb_storage"
+      "sd_mod"
+    ];
     initrd.kernelModules = [ ];
     initrd.systemd.enable = true;
 
     kernelModules = [ "kvm-intel" ];
     extraModulePackages = [ ];
 
-    loader.systemd-boot = {
-      enable = true;
-      extraEntries = {
-        "grub.conf" = "
-          title GRUB
-          efi /EFI/nixos/grubx64.efi
-          sort-key z_grub
-        ";
-      };
-    };
+    loader.systemd-boot.enable = true;
 
     loader.efi.canTouchEfiVariables = true;
     loader.efi.efiSysMountPoint = esp;
     loader.timeout = 0;
 
-    uki.settings = {
-      microcode = "${pkgs.microcode-intel}/intel-ucode.img";
-    };
+    uki.settings.microcode = "${pkgs.microcode-intel}/intel-ucode.img";
 
     # Activate Plymouth
     plymouth = {
       enable = true;
-      theme = "rings";
+      theme = "cuts_alt";
       themePackages = with pkgs; [
         # By default we would install all themes
         (adi1090x-plymouth-themes.override {
-          selected_themes = [ "rings" ];
+          selected_themes = [ "cuts_alt" ];
         })
       ];
     };
