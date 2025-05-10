@@ -1,4 +1,10 @@
+{ pkgs, ... }:
 {
+  # Shell configuration
+  programs.zsh.enable = true;
+  environment.shells = [ pkgs.zsh ];
+  users.defaultUserShell = pkgs.zsh;
+
   users.users.slydd = {
     isNormalUser = true;
     extraGroups = [
@@ -10,5 +16,7 @@
       "networkmanager"
       "git"
     ];
+    shell = pkgs.zsh;
   };
+
 }

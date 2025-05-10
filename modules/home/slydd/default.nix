@@ -12,6 +12,10 @@
     ./zed
     ./git
     ./kitty
+    ./zsh
+
+    # Desktop Manager
+    ./hyprland
 
     # Home directory configuration
     ./home.nix
