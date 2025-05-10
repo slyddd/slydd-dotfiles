@@ -1,7 +1,7 @@
 {
   networking.networkmanager.enable = true;
 
-  # networking.firewall.allowedTCPPorts = [ ];
-  # networking.firewall.allowedUDPPorts = [ ];
+  networking.firewall.allowedTCPPorts = [ 8081 ];
+  networking.firewall.allowedUDPPorts = [ ];
   networking.firewall.enable = true;
 }
