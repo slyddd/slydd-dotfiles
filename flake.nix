@@ -1,12 +1,14 @@
 {
   description = "Aestetic NixOs Dotfiles Using Flakes";
 
-  outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs =
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = import inputs.systems;
 
       imports = [
         ./modules/system
+        ./modules/flake
       ];
     };
 
@@ -26,6 +28,11 @@
 
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:MarceColl/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

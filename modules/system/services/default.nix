@@ -1,7 +1,7 @@
 {
- imports = [
-  ./network.nix
-  ./sound.nix
-  ./xserver.nix
- ];
+  imports = [
+    ./network.nix
+    ./sound.nix
+    ./xserver.nix
+  ];
 }
