@@ -1,0 +1,7 @@
+{
+  imports = [
+    ./fuzzel
+    ./zed
+    ./obs
+  ];
+}

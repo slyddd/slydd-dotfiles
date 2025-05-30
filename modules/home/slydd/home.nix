@@ -1,12 +1,8 @@
 {
-   # Home Manager needs a bit of information about you and the
+  # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "slydd";
   home.homeDirectory = "/home/slydd";
-
-  # Packages that should be installed to the user profile.
-  home.packages = [
-  ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

@@ -5,7 +5,7 @@
     enableZshIntegration = true;
 
     settings = {
-      format = "$os $username $directory$git_status $character ";
+      format = "$os$nix_shell$username$directory$git_status$character ";
       continuation_prompt = "-> ";
       scan_timeout = 10;
       add_newline = true;
@@ -42,14 +42,16 @@
       };
 
       os = {
-        style = "fg:blue";
+        style = "fg:sky";
         disabled = false;
         symbols.NixOS = "";
       };
 
       directory = {
         truncation_length = 2;
-        format = "[$read_only]($read_only_style)[$path]($style)";
+        truncate_to_repo = true;
+        format = " [$read_only]($read_only_style)[$path]($style)";
+        repo_root_format = " [$read_only]($read_only_style)[$repo_root]($repo_root_style)[$path]($style)";
         read_only = " ";
         style = "fg:blue";
         read_only_style = "fg:blue";
@@ -59,14 +61,14 @@
       username = {
         style_root = "fg:blue";
         style_user = "fg:blue";
-        format = "[$user]($style)";
+        format = " [$user]($style)";
         show_always = true;
         aliases.root = "󰈸";
       };
 
       git_status = {
         style = "fg:yellow";
-        format = "[$all_status$ahead_behind]($style)";
+        format = " [$all_status$ahead_behind]($style)";
         conflicted = "=$count ";
         ahead = "⇡$count ";
         behind = "⇣$count ";
@@ -78,7 +80,13 @@
         deleted = "✘$count ";
       };
 
-      character.format = "[$symbol](fg:blue)";
+      character.format = " [$symbol](fg:blue)";
+
+      nix_shell = {
+        disabled = false;
+        format = ''[ \($name\)]($style)'';
+        style = "fg:sky";
+      };
     };
   };
 }

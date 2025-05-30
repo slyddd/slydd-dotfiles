@@ -15,5 +15,9 @@ in
     };
 
     backupFileExtension = "nixos-unified-template-backup";
+
+    sharedModules = [
+      ./theme
+    ];
   };
 }

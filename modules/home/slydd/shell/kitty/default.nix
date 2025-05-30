@@ -1,3 +1,9 @@
+{ config, ... }:
+let
+  inherit (config.theme) colorscheme;
+
+  theme = if colorscheme.mode == "dark" then "Catppuccin-Mocha" else "Catppuccin-Latte";
+in
 {
   programs.kitty = {
     enable = true;
@@ -7,7 +13,7 @@
       size = 9;
     };
 
-    themeFile = "Catppuccin-Mocha";
+    themeFile = theme;
 
     shellIntegration.enableZshIntegration = true;
 
@@ -28,7 +34,10 @@
 
       # UI
       background_opacity = 0.8;
+      background = colorscheme.base;
+      foreground = colorscheme.text;
       background_blur = 1;
+      window_padding_width = 20;
 
       # Tabs
       tab_bar_edge = "bottom";
