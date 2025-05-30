@@ -1,9 +1,4 @@
 { pkgs, ... }:
-let
-  sddm-astronaut = pkgs.sddm-astronaut.override {
-    embeddedTheme = "black_hole";
-  };
-in
 {
   services.xserver = {
     enable = true;
@@ -20,9 +15,15 @@ in
     extraPackages = with pkgs; [ kdePackages.qtmultimedia ];
   };
 
-  environment.systemPackages = [
-    sddm-astronaut
-  ];
+  environment.systemPackages =
+    let
+      sddm-astronaut = pkgs.sddm-astronaut.override {
+        embeddedTheme = "japanese_aesthetic";
+      };
+    in
+    [
+      sddm-astronaut
+    ];
 
   services.libinput.enable = true;
 
