@@ -34,6 +34,8 @@
           "XCURSOR_THEME,${pointer.name}"
           "XCURSOR_SIZE,${toString pointer.size}"
         ];
+
+        monitor = [ "eDP-1,preferred,auto,1" ];
       };
   };
 }

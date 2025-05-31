@@ -21,6 +21,9 @@ in
 
       [app-name=VOLUMECTL]
       on-notify=exec echo null > /dev/null
+
+      [app-name=LIGHTCTL]
+      on-notify=exec echo null > /dev/null
     '';
   };
 }

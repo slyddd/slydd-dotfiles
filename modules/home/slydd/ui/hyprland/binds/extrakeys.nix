@@ -5,8 +5,9 @@
       ", XF86AudioLowerVolume, Decrease Volume, exec, volumectl down 5"
       ", XF86AudioMute, Toggle Mute, exec, volumectl toggle-mute"
       ", XF86AudioMicMute, Toggle Microphone Mute, exec, volumectl toggle-mic-mute"
-      ", XF86BrightnessUp, Increase Brightness, exec, lightctl up 5"
-      ", XF86BrightnessDown, Decrease Brightness, exec, lightctl down 5"
+      ", XF86MonBrightnessUp, Increase Brightness, exec, lightctl up 5"
+      ", XF86MonBrightnessDown, Decrease Brightness, exec, lightctl down 5"
+      ", XF86WLAN, Toggle Wi-Fi, exec, networkctl toggle-network"
     ];
   };
 }
