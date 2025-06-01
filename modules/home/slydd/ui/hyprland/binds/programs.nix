@@ -14,6 +14,7 @@
 
       "$mod, l, Lock screen, exec, hyprlock"
       "$mod, c, Color Picker, exec, hyprpicker -a"
+      ", Print, Take Screenshot, exec, grimblast --notify copysave area"
     ];
   };
 }

@@ -33,6 +33,7 @@
           "GTK_THEME,${config.gtk.theme.name}"
           "XCURSOR_THEME,${pointer.name}"
           "XCURSOR_SIZE,${toString pointer.size}"
+          "GRIMBLAST_HIDE_CURSOR,0"
         ];
 
         monitor = [ "eDP-1,preferred,auto,1" ];

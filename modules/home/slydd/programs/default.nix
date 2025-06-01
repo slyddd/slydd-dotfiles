@@ -39,6 +39,8 @@
     libcanberra-gtk3
     libnotify
     upower
+    grim
+    grimblast
 
     # own packages
     self.packages.${pkgs.system}.lightctl
