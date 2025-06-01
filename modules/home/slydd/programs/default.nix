@@ -31,6 +31,12 @@
     pwvucontrol
     spotify
 
+    # game
+    steam
+    lutris
+    retroarch
+    minecraft
+
     # system tools
     package-version-server
     xorg.xev
