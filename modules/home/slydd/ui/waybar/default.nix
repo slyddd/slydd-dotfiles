@@ -79,6 +79,9 @@
         bat = "BAT1";
         "tooltip-format" = "{capacity}%: {time}";
         "states" = {
+          "full" = 100;
+          "normal" = 90;
+          "high" = 50;
           "warning" = 30;
           "critical" = 15;
         };
@@ -127,7 +130,6 @@
         #battery {
           padding: 0 5px;
           border-radius: 9999px;
-          background: #fff;
           font-size: 0.1px;
         }
 
@@ -145,6 +147,21 @@
           100% {
             opacity: 0.25;
           }
+        }
+
+        #battery.full {
+          background: #00A001;
+          color: #00A001;
+        }
+
+        #battery.normal {
+          background: #fff;
+          color: #00A061;
+        }
+
+        #battery.high {
+          background: #00A0A0;
+          color: #00A0A0;
         }
 
         #battery.critical {

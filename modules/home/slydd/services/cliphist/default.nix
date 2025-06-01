@@ -2,6 +2,12 @@
   services.cliphist = {
     enable = true;
     allowImages = true;
-    systemdTarget = "graphical-session.target";
+    systemdTargets = "graphical-session.target";
+    extraOptions = [
+      "-max-dedupe-search"
+      "10"
+      "-max-items"
+      "100"
+    ];
   };
 }

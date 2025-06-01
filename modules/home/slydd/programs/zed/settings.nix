@@ -26,10 +26,10 @@
     assistant = {
       enabled = true;
       version = "2";
-      default_open_ai_model = "gpt-4o";
+      default_open_ai_model = "gpt-4.1";
       default_model = {
         provider = "copilot_chat";
-        model = "gpt-4o";
+        model = "gpt-4.1";
       };
     };
 

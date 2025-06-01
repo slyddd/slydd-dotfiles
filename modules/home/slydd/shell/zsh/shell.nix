@@ -22,6 +22,14 @@
     };
 
     initContent = ''
+      export SUDO_PROMPT="Deployin root access for %u. Password pls: "
+      export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+
+      command_not_found_handler() {
+        printf "%s%s? I don't know what is it\n" "$acc" "$0" >&2
+        return 127
+      }
+
       fastfetch
     '';
 

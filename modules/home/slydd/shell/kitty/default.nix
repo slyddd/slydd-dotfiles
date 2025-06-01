@@ -19,6 +19,8 @@ in
 
     settings = {
 
+      enable_audio_bell = "no";
+
       # Cursor Settings
       cursor_shape = "beam";
       cursor_blink = true;
