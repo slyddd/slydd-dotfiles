@@ -1,7 +1,7 @@
 {
   imports = [
-    ./git
-    ./kitty
     ./zsh
+    ./git.nix
+    ./kitty.nix
   ];
 }

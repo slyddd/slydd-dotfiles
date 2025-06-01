@@ -4,6 +4,17 @@
   config,
   ...
 }:
+let
+  # Script Nix-puro para chequear si hay música reproduciéndose
+  musicCheck = pkgs.writeShellScript "music-playing-check.sh" ''
+    status=$(${pkgs.playerctl}/bin/playerctl status 2>/dev/null)
+    if [ "$status" = "Playing" ]; then
+      exit 0
+    else
+      exit 1
+    fi
+  '';
+in
 {
   services.hypridle = {
     enable = true;
@@ -22,16 +33,16 @@
         }
         {
           timeout = 300;
-          on-timeout = "${pkgs.systemd}/bin/loginctl lock-session";
+          on-timeout = "${musicCheck} || ${pkgs.systemd}/bin/loginctl lock-session";
         }
         {
           timeout = 330;
-          on-timeout = "hyprctl dispatch dpms off";
+          on-timeout = "${musicCheck} || hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on && ${pkgs.brightnessctl}/bin/brightnessctl -r";
         }
         {
           timeout = 600;
-          on-timeout = "${pkgs.systemd}/bin/systemctl suspend";
+          on-timeout = "${musicCheck} || ${pkgs.systemd}/bin/systemctl suspend";
         }
       ];
     };

@@ -18,6 +18,8 @@ in
 
       [urgency=critical]
       background-color=#ac0015ff
+      ignore-timeout=1
+      default-timeout=0
 
       [app-name=VOLUMECTL]
       on-notify=exec echo null > /dev/null
