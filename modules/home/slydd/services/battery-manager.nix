@@ -7,6 +7,7 @@ let
 
     if [ "$battery" -le 10 ] && [ "$batteryStatus" = "discharging" ]; then
       ${pkgs.libnotify}/bin/notify-send -u critical \
+      -h int:value:"$battery" \
       -h string:x-canonical-private-synchronous:"$battery" \
       "Battery Warning" \
       "Battery is at $battery%" \

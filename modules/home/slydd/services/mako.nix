@@ -17,7 +17,7 @@ in
       on-notify=exec ${pkgs.libcanberra-gtk3}/bin/canberra-gtk-play -f "${sounds.notification}"
 
       [urgency=critical]
-      background-color=#ac0015ff
+      background-color=#711421ff
       ignore-timeout=1
       default-timeout=0
 
