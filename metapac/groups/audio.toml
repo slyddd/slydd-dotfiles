@@ -1,0 +1,7 @@
+arch = [
+  "alsa-utils",
+  "pipewire",
+  "pipewire-jack",
+  "pipewire-pulse",
+  "sof-firmware",
+]

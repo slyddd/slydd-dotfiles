@@ -1,0 +1,31 @@
+arch = [
+  "iptables-nft",
+  "bluez-utils",
+  "reflector",
+  { package = "networkmanager", hooks = { after_install = [
+    "sudo",
+    "systemctl",
+    "enable",
+    "--now",
+    "NetworkManager.service",
+  ]}},
+  { package = "openssh", hooks = { after_install = [
+    "sudo",
+    "systemctl",
+    "enable",
+    "--now",
+    "sshd.service",
+  ]}},
+  { package = "ufw", hooks = { after_install = [
+    "sudo",
+    "ufw",
+    "enable",
+  ]}},
+  { package = "bluez", hooks = { after_install = [
+    "sudo",
+    "systemctl",
+    "enable",
+    "--now",
+    "bluetooth.service",
+  ]}},
+]
