@@ -1,0 +1,72 @@
+{
+  "autosave": "off",
+  "restore_on_startup": "none",
+
+  "buffer_font_features": {
+    "calt": true
+  },
+  "buffer_font_size": 11,
+  "buffer_font_family": "FiraCode Nerd Font",
+
+  "ui_font_size": 12,
+  "ui_font_family": "Roboto",
+
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+    "use_system_clipboard": "always"
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+
+  "scrollbar": {
+    "show": "never"
+  },
+
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false
+  },
+
+  "tab_size": 2,
+
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "model_parameters": []
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
+  "project_panel": {
+    "button": false,
+    "default_width": 200,
+    "indent_size": 10,
+    "scrollbar": {
+      "show": "never"
+    }
+  },
+
+  "theme": {
+    "mode": "dark",
+    "dark": "Catppuccin Mocha (Blur)",
+    "light": "Catppuccin Latte (Blur)"
+  },
+
+  "icon_theme": "Material Icon Theme",
+
+  "terminal": {
+    "blinking": "on",
+    "line_height": "comfortable",
+    "scrollbar": {
+      "show": "never"
+    }
+  }
+}
