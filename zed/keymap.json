@@ -23,7 +23,7 @@
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-t": "terminal_panel::ToggleFocus"
+      "ctrl-t": "terminal_panel::Toggle"
     }
   },
   {
