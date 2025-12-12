@@ -1,8 +1,0 @@
-arch = [
-  "kitty",
-  "enpass-bin",
-  "zed",
-  "zen-browser-bin",
-  "neovim",
-  "git",
-]

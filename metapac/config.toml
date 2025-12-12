@@ -1,5 +1,0 @@
-# Metapac configuration file
-enabled_backends = ["arch"]
-
-[arch]
-package_manager = "paru"
