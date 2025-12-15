@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Deadlight-Boot
+Description=Deadlight Bootanimation For Plymouth
+Comment=made by Vivek Rajan
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/Deadlight
+ScriptFile=/usr/share/plymouth/themes/Deadlight/Deadlight.script

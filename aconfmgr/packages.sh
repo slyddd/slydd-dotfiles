@@ -12,6 +12,7 @@ AddPackage grub
 AddPackage grub-btrfs
 AddPackage sbctl
 AddPackage sudo
+AddPackage plymouth
 
 # Filesystems & Storage
 AddPackage btrfs-progs
