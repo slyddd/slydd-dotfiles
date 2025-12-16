@@ -64,6 +64,14 @@ AddPackage tmux
 AddPackage yazi
 AddPackage zed
 AddPackage zsh
+AddPackage exiftool
+AddPackage mdcat
+AddPackage 7zip
+AddPackage tar
+AddPackage unzip
+AddPackage chafa
+AddPackage flameshot
+AddPackage perl-image-exiftool
 
 # Qt & Multimedia
 AddPackage qt6-multimedia-ffmpeg

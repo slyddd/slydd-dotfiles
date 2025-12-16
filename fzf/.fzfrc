@@ -1,9 +1,9 @@
---height 40%
+--height ~100%
 --layout=reverse
 --border none
 --info=inline
---preview-window=right:60%:wrap
---preview "less --tabs=4 {}"
+--preview-window=right:50%
+--preview "~/.config/fzf/fzf-preview.sh {}"
 --color="
 preview-bg:#313244,
 pointer:#89b4fa

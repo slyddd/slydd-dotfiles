@@ -29,7 +29,8 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # fzf-tab settings
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':fzf-tab:complete:*:*' fzf-preview 'less ${(Q)realpath}'
-export LESSOPEN='|~/.config/zsh/scripts/.lessfilter.sh %s'
+export LESSOPEN='|~/.config/fzf/fzf-preview.sh %s'
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':completion:*' menu no
 
 # Enable plugins
