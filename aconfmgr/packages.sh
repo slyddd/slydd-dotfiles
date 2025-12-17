@@ -13,7 +13,6 @@ AddPackage grub-btrfs
 AddPackage sbctl
 AddPackage sudo
 AddPackage plymouth
-AddPackage udisks2
 
 # Filesystems & Storage
 AddPackage btrfs-progs
@@ -39,7 +38,7 @@ AddPackage sof-firmware
 
 # Desktop Environments & Window Managers
 AddPackage cinnamon
-AddPackage hyprland
+AddPackage --foreign mangowc-git
 AddPackage qtile
 AddPackage sddm
 
@@ -47,8 +46,9 @@ AddPackage sddm
 AddPackage orchis-theme
 AddPackage ttf-firacode-nerd
 AddPackage sddm-astronaut-theme
+AddPackage --foreign dms-shell-bin
 
-# Utilities & Tools
+# CLI Tools
 AddPackage acpid
 AddPackage bat
 AddPackage eza
@@ -56,14 +56,12 @@ AddPackage fastfetch
 AddPackage fzf
 AddPackage git
 AddPackage github-cli
-AddPackage kitty
 AddPackage less
 AddPackage neovim
 AddPackage starship
 AddPackage stow
 AddPackage tmux
 AddPackage yazi
-AddPackage zed
 AddPackage zsh
 AddPackage exiftool
 AddPackage mdcat
@@ -71,8 +69,16 @@ AddPackage 7zip
 AddPackage tar
 AddPackage unzip
 AddPackage chafa
-AddPackage flameshot
 AddPackage perl-image-exiftool
+AddPackage btop
+
+# User Programs
+AddPackage kitty
+AddPackage zed
+AddPackage flameshot
+AddPackage spotify-launcher
+AddPackage blueman
+
 
 # Qt & Multimedia
 AddPackage qt6-multimedia-ffmpeg
@@ -84,7 +90,7 @@ AddPackage --foreign aconfmgr-git
 AddPackage --foreign bibata-cursor-theme
 AddPackage --foreign enpass-bin
 AddPackage --foreign kora-icon-theme
-AddPackage --foreign paru-bin
-AddPackage --foreign paru-bin-debug
+AddPackage --foreign paru-git
+AddPackage --foreign paru-git-debug
 AddPackage --foreign timeshift-autosnap
 AddPackage --foreign zen-browser-bin
