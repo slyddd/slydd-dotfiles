@@ -64,7 +64,3 @@ CopyFileTo /plymouth/themes/Deadlight/progress-12.png /usr/share/plymouth/themes
 CopyFileTo /plymouth/themes/Deadlight/progress-45.png /usr/share/plymouth/themes/Deadlight/progress-45.png
 CopyFileTo /plymouth/themes/Deadlight/progress-47.png /usr/share/plymouth/themes/Deadlight/progress-47.png
 CopyFileTo /plymouth/themes/Deadlight/progress-2.png /usr/share/plymouth/themes/Deadlight/progress-2.png
-
-# Set theme variant
-CopyFileTo /sddm/astronaut-theme.desktop \
-           /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
