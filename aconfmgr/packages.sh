@@ -40,7 +40,8 @@ AddPackage sof-firmware
 AddPackage cinnamon
 AddPackage --foreign mangowc-git
 AddPackage qtile
-AddPackage sddm
+AddPackage ly
+AddPackage --foreign mangowc-git
 
 # Themes, Icons, Fonts
 AddPackage orchis-theme
