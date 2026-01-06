@@ -2,7 +2,9 @@ require("full-border"):setup {
   type = ui.Border.ROUNDED,
 }
 require("git"):setup()
-require("starship"):setup()
+require("starship"):setup({
+  config_file = "~/.config/starship/starship.toml",
+})
 
 Status:children_add(function(self)
   local h = self._current.hovered
