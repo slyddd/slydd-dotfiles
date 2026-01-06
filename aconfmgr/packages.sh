@@ -36,6 +36,17 @@ AddPackage pipewire-jack
 AddPackage pipewire-pulse
 AddPackage sof-firmware
 
+# Video
+AddPackage vulkan-icd-loader
+AddPackage vulkan-intel
+AddPackage vulkan-tools
+AddPackage xorg-xauth
+AddPackage seatd
+AddPackage libva-intel-driver
+AddPackage libva-utils
+AddPackage --foreign xrdp
+AddPackage --foreign xorgxrdp
+
 # Desktop Environments & Window Managers
 AddPackage cinnamon
 AddPackage --foreign mangowc-git
@@ -80,6 +91,20 @@ AddPackage flameshot
 AddPackage spotify-launcher
 AddPackage blueman
 
+# Game
+AddPackage gamescope
+AddPackage steam
+AddPackage retroarch
+AddPackage retroarch-assets-xmb
+AddPackage retroarch-assets-ozone
+AddPackage --foreign apollo-git
+AddPackage --foreign heroic-games-launcher-bin
+AddPackage --foreign steam-rom-manager-bin
+## Libretro
+AddPackage libretro-core-info
+AddPackage libretro-shaders-slang
+AddPackage libretro-mupen64plus-next
+AddPackage libretro-snes9x
 
 # Qt & Multimedia
 AddPackage qt6-multimedia-ffmpeg
