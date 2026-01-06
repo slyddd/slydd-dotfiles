@@ -1,4 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="nvim"
 
 ZSH_THEME="robbyrussell"
 
