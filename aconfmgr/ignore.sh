@@ -16,3 +16,6 @@ IgnorePath '/opt/**'
 
 IgnorePath '/boot/*'
 IgnorePath '/boot/**'
+
+IgnorePath '/nix/*'
+IgnorePath '/nix/**'

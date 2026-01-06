@@ -28,6 +28,8 @@ AddPackage reflector
 AddPackage ufw
 AddPackage bluez
 AddPackage bluez-utils
+AddPackage ethtool
+AddPackage syncthing
 
 # Audio
 AddPackage alsa-utils
@@ -49,7 +51,6 @@ AddPackage --foreign xorgxrdp
 
 # Desktop Environments & Window Managers
 AddPackage cinnamon
-AddPackage --foreign mangowc-git
 AddPackage qtile
 AddPackage ly
 AddPackage --foreign mangowc-git
@@ -57,7 +58,6 @@ AddPackage --foreign mangowc-git
 # Themes, Icons, Fonts
 AddPackage orchis-theme
 AddPackage ttf-firacode-nerd
-AddPackage sddm-astronaut-theme
 AddPackage --foreign dms-shell-bin
 
 # CLI Tools
@@ -81,8 +81,14 @@ AddPackage 7zip
 AddPackage tar
 AddPackage unzip
 AddPackage chafa
-AddPackage perl-image-exiftool
 AddPackage btop
+AddPackage wl-clipboard
+AddPackage cliphist
+AddPackage perl-image-exiftool
+AddPackage jq
+AddPackage wev
+AddPackage nix
+AddPackage brightnessctl
 
 # User Programs
 AddPackage kitty
@@ -90,6 +96,8 @@ AddPackage zed
 AddPackage flameshot
 AddPackage spotify-launcher
 AddPackage blueman
+AddPackage tailscale
+AddPackage fuzzel
 
 # Game
 AddPackage gamescope
