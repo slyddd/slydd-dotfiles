@@ -17,8 +17,8 @@ line_numbers = true
 
 [plugin]
 prepend_previewers = [
-  { name = "*.md", run = "mdcat" },
-  { name = "*.markdown", run = "mdcat" },
+  { mime = "text/*", run = 'piper -- less "$1"' },
+  { mime = "application/*", run = 'piper -- less "$1"' },
 ]
 prepend_fetchers = [
   { id = "git", url = "*", run = "git" },
