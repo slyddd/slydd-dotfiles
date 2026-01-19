@@ -113,6 +113,11 @@ AddPackage libretro-core-info
 AddPackage libretro-shaders-slang
 AddPackage libretro-mupen64plus-next
 AddPackage libretro-snes9x
+AddPackage libretro-mgba
+AddPackage libretro-mesen
+
+# Android
+AddPackage --foreign android-sdk-platform-tools
 
 # Qt & Multimedia
 AddPackage qt6-multimedia-ffmpeg
@@ -128,3 +133,4 @@ AddPackage --foreign paru-git
 AddPackage --foreign paru-git-debug
 AddPackage --foreign timeshift-autosnap
 AddPackage --foreign zen-browser-bin
+AddPackage --foreign discord-ptb
