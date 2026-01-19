@@ -1,0 +1,14 @@
+{
+  "dankLauncherKeys": {
+    "enabled": true,
+    "providers": [
+      "mangowc"
+    ]
+  },
+  "tailscale": {
+    "enabled": true
+  },
+  "emojiLauncher": {
+    "enabled": true
+  }
+}
