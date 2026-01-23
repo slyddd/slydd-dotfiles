@@ -389,10 +389,6 @@
           "enabled": true
         },
         {
-          "id": "tailscale",
-          "enabled": true
-        },
-        {
           "id": "privacyIndicator",
           "enabled": true
         },

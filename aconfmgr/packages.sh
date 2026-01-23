@@ -107,6 +107,7 @@ AddPackage retroarch-assets-xmb
 AddPackage retroarch-assets-ozone
 AddPackage --foreign apollo-git
 AddPackage --foreign heroic-games-launcher-bin
+AddPackage --foreign rmg-bin
 AddPackage --foreign steam-rom-manager-bin
 ## Libretro
 AddPackage libretro-core-info
