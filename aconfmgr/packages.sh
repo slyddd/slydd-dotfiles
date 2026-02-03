@@ -51,9 +51,11 @@ AddPackage --foreign xorgxrdp
 
 # Desktop Environments & Window Managers
 AddPackage cinnamon
-AddPackage qtile
 AddPackage ly
-AddPackage --foreign mangowc-git
+AddPackage hyprland
+## Hyprland Extras
+AddPackage --foreign hyprland-plugin-hyprexpo
+AddPackage --foreign hyprland-plugin-hyprscrolling
 
 # Themes, Icons, Fonts
 AddPackage orchis-theme
@@ -66,8 +68,6 @@ AddPackage bat
 AddPackage eza
 AddPackage fastfetch
 AddPackage fzf
-AddPackage git
-AddPackage github-cli
 AddPackage less
 AddPackage neovim
 AddPackage starship
@@ -117,7 +117,13 @@ AddPackage libretro-snes9x
 AddPackage libretro-mgba
 AddPackage libretro-mesen
 
-# Android
+# Development Tools
+AddPackage git
+AddPackage github-cli
+## Web Development
+AddPackage nodejs
+AddPackage bun
+## Android
 AddPackage --foreign android-sdk-platform-tools
 
 # Qt & Multimedia

@@ -19,7 +19,7 @@ This repository contains my personal dotfiles for Arch Linux, organized and mana
 - **Declarative Package Manager:** [aconfmgr](https://github.com/CyberShadow/aconfmgr)
 - **Symlink Manager:** [GNU Stow](https://www.gnu.org/software/stow)
 - **AUR Helper:** paru
-- **Window Manager:** [MangoWC](https://github.com/DreamMaoMao/mangowc)
+- **Window Manager:** [hyprland](https://github.com/hyprwm/Hyprland)
 - **Widgets & Desktop Shell:** [DMS (Dank Material Shell)](https://danklinux.com/docs)
 - **App Launcher:** fuzzel
 - **Terminal:** kitty + zsh + starship
