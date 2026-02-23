@@ -17,8 +17,18 @@ line_numbers = true
 
 [plugin]
 prepend_previewers = [
-  { mime = "text/*", run = 'piper -- less "$1"' },
-  { mime = "application/*", run = 'piper -- less "$1"' },
+  { mime = "text/*", run = 'piper -- bat --color=always --style=plain "$1"' },
+  { url = "*/", run = 'piper -- eza -l --git --color=always --icons=always --group-directories-first --no-quotes "$1"'},
+  { mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}", run = "ouch" },
+  { url = "*.csv", run = "duckdb" },
+  { url = "*.tsv", run = "duckdb" },
+  { url = "*.parquet", run = "duckdb" },
+  { url = "*.xlsx", run = "duckdb" },
+  { url = "*.db", run = "duckdb" },
+  { url = "*.duckdb", run = "duckdb" },
+  { url = "*.{md,markdown}", run = 'piper -- glow "$1"' },
+  { url = "*.pdf", run = 'piper -- tdf "$1"'}
+
 ]
 prepend_fetchers = [
   { id = "git", url = "*", run = "git" },
