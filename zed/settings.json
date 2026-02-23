@@ -1,9 +1,24 @@
 {
+  "edit_predictions": {
+    "provider": "copilot"
+  },
+  "ssh_connections": [
+    {
+      "host": "173.212.206.128",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/root"],
+        },
+      ],
+    },
+  ],
   "autosave": "off",
-  "restore_on_startup": "none",
+  "restore_on_startup": "empty_tab",
 
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "buffer_font_size": 11,
   "buffer_font_family": "FiraCode Nerd Font",
@@ -14,35 +29,36 @@
   "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
 
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
 
   "toolbar": {
     "quick_actions": false,
     "selections_menu": false,
-    "agent_review": false
+    "agent_review": false,
   },
 
   "tab_size": 2,
 
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+    },
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "gpt-5-mini",
     },
-    "model_parameters": []
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
+    "model_parameters": [],
   },
 
   "project_panel": {
@@ -50,14 +66,14 @@
     "default_width": 200,
     "indent_size": 10,
     "scrollbar": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
 
   "theme": {
     "mode": "dark",
     "dark": "Catppuccin Mocha (Blur)",
-    "light": "Catppuccin Latte (Blur)"
+    "light": "Catppuccin Latte (Blur)",
   },
 
   "icon_theme": "Material Icon Theme",
@@ -66,7 +82,7 @@
     "blinking": "on",
     "line_height": "comfortable",
     "scrollbar": {
-      "show": "never"
-    }
-  }
+      "show": "never",
+    },
+  },
 }

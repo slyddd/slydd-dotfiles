@@ -118,15 +118,20 @@
       "id": "builtin_vpn",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "battery",
+      "enabled": true,
+      "width": 50
     }
   ],
   "showWorkspaceIndex": true,
-  "showWorkspaceName": false,
+  "showWorkspaceName": true,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": false,
+  "showWorkspaceApps": true,
   "maxWorkspaceIcons": 3,
-  "groupWorkspaceApps": true,
+  "groupWorkspaceApps": false,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
   "reverseScrolling": false,
@@ -134,7 +139,7 @@
   "workspaceColorMode": "default",
   "workspaceUnfocusedColorMode": "default",
   "workspaceUrgentColorMode": "default",
-  "workspaceFocusedBorderEnabled": true,
+  "workspaceFocusedBorderEnabled": false,
   "workspaceFocusedBorderColor": "primary",
   "workspaceFocusedBorderThickness": 2,
   "workspaceNameIcons": {},

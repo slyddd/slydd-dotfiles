@@ -43,5 +43,11 @@
       "j": "tab_switcher::Toggle",
       "x": "tab_switcher::CloseSelectedItem"
     }
+  },
+  {
+    "context": "(Editor && edit_prediction)",
+    "bindings": {
+      "tab": null
+    }
   }
 ]
