@@ -1,7 +1,7 @@
-{...}:
+{ ... }:
 {
   imports = [
     ./kernel.nix
-    ./limine.nix
+    ./bootloader.nix
   ];
 }
