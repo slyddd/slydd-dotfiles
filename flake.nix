@@ -51,6 +51,12 @@
       url = "github:nix-community/nix4nvchad";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Lanzaboote for managing boot entries
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v1.0.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -58,6 +64,7 @@
       self,
       nixpkgs,
       home-manager,
+      lanzaboote,
       ...
     }:
     let
@@ -69,10 +76,11 @@
         specialArgs = { inherit inputs; };
 
         modules = [
+          home-manager.nixosModules.home-manager
+          lanzaboote.nixosModules.lanzaboote
           ./system
           ./hosts/dev2die
           ./home
-          home-manager.nixosModules.home-manager
         ];
       };
     };
