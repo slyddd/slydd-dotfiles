@@ -6,6 +6,6 @@
 
   programs.silentSDDM = {
     enable = true;
-    theme = "rei";
+    theme = "default";
   };
 }
