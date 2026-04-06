@@ -15,6 +15,7 @@
       "network"
       "networkmanager"
       "git"
+      "docker"
     ];
     shell = pkgs.zsh;
   };
