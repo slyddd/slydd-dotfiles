@@ -58,7 +58,6 @@
       self,
       nixpkgs,
       home-manager,
-      jovian,
       ...
     }:
     let
