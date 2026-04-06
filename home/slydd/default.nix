@@ -1,17 +1,33 @@
 { pkgs, ... }:
+let
+  wallpaper = ./assets/background.jpg;
+  schemeType = "scheme-neutral";
+  logo = ./assets/logo.jpg;
+
+  generatedColors = import ../theme/getColors.nix {
+    inherit pkgs;
+    wallpaper = wallpaper;
+    mode = "dark";
+    schemeType = schemeType;
+  };
+in
 {
   imports = [
     ./home.nix
     ./cursor.nix
+
     ./ui
     ./shell
+    ./programs
   ];
 
-  programs.git.enable = true;
-  programs.zsh.enable = true;
-  programs.kitty.enable = true;
-  programs.neovim.enable = true;
-  programs.chromium.enable = true;
-  programs.zen-browser.enable = true;
-  programs.zed-editor.enable = true;
+  home.file.".face".source = logo;
+  home.file.".face.icon".source = logo;
+
+  theme = {
+    colorscheme = generatedColors;
+    schemeType = schemeType;
+    wallpaper = wallpaper;
+    logo = logo;
+  };
 }

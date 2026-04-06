@@ -8,5 +8,9 @@
     extraSpecialArgs = { inherit inputs; };
 
     backupFileExtension = "nixbak";
+
+    sharedModules = [
+      ./theme
+    ];
   };
 }
