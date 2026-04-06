@@ -1,7 +1,10 @@
-{...}:
+{ ... }:
 {
   imports = [
     ./hyprland
-    ./dms.nix
+    ./dms
+    ./gtk.nix
+    ./qt.nix
   ];
+
 }
