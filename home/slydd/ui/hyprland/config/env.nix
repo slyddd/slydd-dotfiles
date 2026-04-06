@@ -17,6 +17,7 @@
         "QT_QPA_PLATFORMTHEME,qt5ct"
         "QT_STYLE_OVERRIDE,kvantum"
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+        "GTK_THEME,${config.gtk.theme.name}"
         "XCURSOR_THEME,${pointer.name}"
         "XCURSOR_SIZE,${toString pointer.size}"
         "GRIMBLAST_HIDE_CURSOR,0"

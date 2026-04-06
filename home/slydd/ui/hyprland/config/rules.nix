@@ -16,6 +16,15 @@
     }
 
     windowrule {
+      name = passwordManager
+      match:class = ^(Enpass)$
+      no_dim = on
+      no_blur = on
+      opaque = on
+      render_unfocused = on
+    }
+
+    windowrule {
       name = pretty-sticky
       match:pin = true
       no_dim = on

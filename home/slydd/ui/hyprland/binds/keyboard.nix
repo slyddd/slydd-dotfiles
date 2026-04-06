@@ -1,14 +1,13 @@
-{...}:
+{ ... }:
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$terminal" = "kitty";
     "$fileManager" = "kitty --class yazi -e yazi";
     "$guiFileManager" = "nemo";
-    "$menu" = "fuzzel";
     "$browser" = "zen-beta";
     "$taskManager" = "kitty -e btop";
-    "$passwordManager" = "enpass showassistant";
+    "$passwordManager" = "Enpass showassistant";
 
     bind = [
       "$mainMod, RETURN, exec, $terminal"
@@ -18,8 +17,8 @@
       "$mainMod SHIFT, E, exec, $guiFileManager"
       "$mainMod SHIFT, ESCAPE, exec, $taskManager"
       "$mainMod, P, exec, $passwordManager"
-      "$mainMod, SUPER_L, exec, fuzzel"
 
+      "$mainMod, SUPER_L, exec, dms ipc call spotlight toggle"
       "$mainMod, V, exec, dms ipc call clipboard toggle"
       "$mainMod, I, exec, dms ipc call settings focusOrToggle"
       "$mainMod, C, exec, dms color pick -a"
@@ -40,10 +39,10 @@
       "$mainMod, LEFT, layoutmsg, focus left"
       "$mainMod, RIGHT, layoutmsg, focus right"
 
-      "$mainMod SHIFT, H, layoutmsg, movewindowto l"
-      "$mainMod SHIFT, L, layoutmsg, movewindowto r"
-      "$mainMod SHIFT, LEFT, layoutmsg, movewindowto l"
-      "$mainMod SHIFT, RIGHT, layoutmsg, movewindowto r"
+      "$mainMod SHIFT, H, layoutmsg, swapcol l"
+      "$mainMod SHIFT, L, layoutmsg, swapcol r"
+      "$mainMod SHIFT, LEFT, layoutmsg, swapcol l"
+      "$mainMod SHIFT, RIGHT, layoutmsg, swapcol r"
 
       "$mainMod CTRL, F, layoutmsg, promote"
 
