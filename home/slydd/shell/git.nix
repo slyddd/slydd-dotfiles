@@ -1,16 +1,21 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    gh
-  ];
+  programs.gh = {
+    enable = true;
+    settings.git_protocol = "https";
+  };
 
   programs.git = {
     enable = true;
-    userName = "slyddd";
-    userEmail = "dayvidnavarrete@gmail.com";
-
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
+      credential.helper = "!gh auth git-credential";
+      credential.useHttpPath = true;
+
+      user = {
+        name = "slyddd";
+        email = "dayvidnavarrete@gmail.com";
+      };
     };
   };
 }
