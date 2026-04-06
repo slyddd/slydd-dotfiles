@@ -74,7 +74,6 @@
           ./hosts/dev2die
           ./home
           home-manager.nixosModules.home-manager
-          jovian.nixosModules.default
         ];
       };
     };
