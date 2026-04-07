@@ -25,7 +25,7 @@
     cornerRadius = 7;
 
     # ── Night Mode ────────────────────────────────────────────────────────
-    nightModeEnabled = true;
+    nightModeEnabled = false;
     nightModeTemperature = 4200;
     nightModeHighTemperature = 6500;
     nightModeAutoEnabled = true;
