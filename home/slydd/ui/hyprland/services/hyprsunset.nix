@@ -2,26 +2,19 @@
 {
   services.hyprsunset = {
     enable = true;
-    transitions = {
-      sunrise = {
-        calendar = "*-*-* 06:00:00";
-        requests = [
-          [
-            "temperature"
-            "6500"
-          ]
-        ];
-      };
+    settings = {
+      max-gamma = 100;
 
-      sunset = {
-        calendar = "*-*-* 19:00:00";
-        requests = [
-          [
-            "temperature"
-            "3500"
-          ]
-        ];
-      };
+      profile = [
+        {
+          time = "6:00";
+          identity = true;
+        }
+        {
+          time = "19:00";
+          temperature = 3500;
+        }
+      ];
     };
   };
 }
