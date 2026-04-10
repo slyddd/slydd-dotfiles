@@ -39,5 +39,7 @@
   boot.kernelParams = [
     "quiet"
     "splash"
+    "mem_sleep_default=deep"
   ];
+
 }

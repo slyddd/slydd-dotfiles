@@ -8,5 +8,6 @@
     ./logind.nix
     ./udisk.nix
     ./docker.nix
+    ./bluetooth.nix
   ];
 }
