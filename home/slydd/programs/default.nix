@@ -24,7 +24,7 @@
     wev
     obsidian
     inkscape
-    enpass
+    bitwarden-desktop
     ferdium
     brightnessctl
     spotify
