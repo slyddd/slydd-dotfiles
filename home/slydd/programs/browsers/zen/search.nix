@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  programs.zen-browser.profiles.default.search = {
+  programs.zen-browser.profiles.personal.search = {
     force = true;
     default = "google";
     engines = {

@@ -14,16 +14,16 @@
       in
       {
         ExtensionSettings = mkExtensionSettings {
-          "firefox-enpass@enpass.io" = "enpass_password_manager";
           "{6def1df3-6313-4648-a6ca-945b92aba510}" = "no-google-search-translation";
         };
       };
 
-    profiles.default = {
+    profiles.personal = {
       extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
         ublock-origin
         vimium
         catppuccin-web-file-icons
+        bitwarden
       ];
 
       mods = [

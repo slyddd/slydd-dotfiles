@@ -1,6 +1,6 @@
 { config, ... }:
 {
-  programs.zen-browser.profiles.default = {
+  programs.zen-browser.profiles.personal = {
     settings = {
       browser = {
         warnOnQuit = false;
