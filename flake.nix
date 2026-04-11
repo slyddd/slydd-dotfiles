@@ -35,6 +35,10 @@
       url = "github:uiriansan/SilentSDDM";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    delicious-theme = {
+      url = "github:stuomas/delicious-sddm-theme";
+      flake = false;
+    };
 
     # Dank Material Shell, with home-manager support
     dms = {
@@ -57,6 +61,12 @@
       url = "github:nix-community/lanzaboote/v1.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Steam Decky Loader
+    jovian = {
+      url = "github:Jovian-Experiments/Jovian-NixOS";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -65,6 +75,7 @@
       nixpkgs,
       home-manager,
       lanzaboote,
+      jovian,
       ...
     }:
     let
@@ -78,6 +89,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           lanzaboote.nixosModules.lanzaboote
+          jovian.nixosModules.default
           ./system
           ./hosts/dev2die
           ./home

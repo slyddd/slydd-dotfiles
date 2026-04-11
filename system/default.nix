@@ -4,5 +4,6 @@
     ./boot
     ./config
     ./services
+    ./programs
   ];
 }

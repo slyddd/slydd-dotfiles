@@ -42,4 +42,5 @@
     "mem_sleep_default=deep"
   ];
 
+  boot.kernelModules = [ "uinput" ];
 }

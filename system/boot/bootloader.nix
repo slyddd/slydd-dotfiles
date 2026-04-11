@@ -1,9 +1,9 @@
 { pkgs, lib, ... }:
 {
   boot.loader = {
-    systemd-boot.enable = lib.mkForce false;
+    systemd-boot.enable = lib.mkForce true;
     timeout = 0;
-    efi.canTouchEfiVariables = false;
+    efi.canTouchEfiVariables = true;
   };
 
   environment.systemPackages = [
@@ -11,7 +11,7 @@
   ];
 
   boot.lanzaboote = {
-    enable = true;
+    enable = false;
     pkiBundle = "/var/lib/sbctl";
   };
 }

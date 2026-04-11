@@ -9,5 +9,6 @@
     ./udisk.nix
     ./docker.nix
     ./bluetooth.nix
+    ./sunshine.nix
   ];
 }
