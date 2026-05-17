@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   nix = {
     gc = {
@@ -23,5 +23,44 @@
   system.autoUpgrade = {
     enable = true;
     dates = "weekly";
+  };
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      zlib
+      zstd
+      stdenv.cc.cc
+      curl
+      openssl
+      libX11
+      libXext
+      libXrandr
+      libXfixes
+      libXcomposite
+      libxcb
+      libXdamage
+      libxshmfence
+      libXxf86vm
+      libGL
+      libdrm
+      libgbm
+      pipewire
+      glib
+      gtk3
+      nspr
+      nss
+      dbus
+      alsa-lib
+      pango
+      cairo
+      atk
+      gdk-pixbuf
+      fontconfig
+      freetype
+      expat
+      libxkbcommon
+      cups
+    ];
   };
 }

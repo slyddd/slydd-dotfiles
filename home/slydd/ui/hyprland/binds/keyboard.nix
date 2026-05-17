@@ -7,7 +7,7 @@
     "$guiFileManager" = "nemo";
     "$browser" = "zen-beta";
     "$taskManager" = "kitty -e btop";
-    "$passwordManager" = "Enpass showassistant";
+    "$passwordManager" = "bitwarden";
 
     bind = [
       "$mainMod, RETURN, exec, $terminal"
@@ -67,6 +67,8 @@
       "$mainMod CTRL, Q, exit,"
       "$mainMod, ESCAPE, exec, pidof hyprlock || hyprlock"
       "ALT, TAB, cyclenext,"
+      "$mainMod, TAB, cyclenext,"
+      "$mainMod SHIFT, C, exec, dms ipc call inhibit toggle"
     ];
 
     bindel = [

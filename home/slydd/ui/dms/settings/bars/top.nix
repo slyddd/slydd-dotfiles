@@ -1,4 +1,4 @@
-{...}:
+{ ... }:
 {
   programs.dank-material-shell = {
     settings.barConfigs = [
@@ -47,6 +47,10 @@
           {
             id = "separator";
             enabled = false;
+          }
+          {
+            id = "idleInhibitor";
+            enabled = true;
           }
           {
             id = "hyprlandSubmap";

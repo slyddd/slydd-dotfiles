@@ -17,11 +17,13 @@
 
     windowrule {
       name = passwordManager
-      match:class = ^(Enpass)$
+      match:class = ^(Bitwarden)$
       no_dim = on
       no_blur = on
       opaque = on
       render_unfocused = on
+      float = on
+      size = 900 700
     }
 
     windowrule {

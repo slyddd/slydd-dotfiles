@@ -4,12 +4,14 @@
     ./zed
     ./yazi
     ./dev
+    ./vscode
+    ./browsers/zen
+    ./browsers/firefox
 
     ./obs.nix
     ./nvim.nix
     ./games.nix
-    ./browsers/zen
-    ./browsers/chromium.nix
+    ./spotify.nix
   ];
 
   home.packages = with pkgs; [
@@ -24,11 +26,12 @@
     bitwarden-desktop
     ferdium
     brightnessctl
-    spotify
     scrcpy
     qtscrcpy
     nodejs
     discord
+    gnome-network-displays
+    iw
   ];
 
   services.kdeconnect.enable = true;

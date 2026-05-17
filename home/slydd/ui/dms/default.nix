@@ -1,4 +1,4 @@
-{inputs, config, ...}:
+{ inputs, config, ... }:
 {
   imports = [
     inputs.dms.homeModules.dank-material-shell
@@ -20,4 +20,8 @@
 
     session.wallpaperPath = config.theme.wallpaper;
   };
+
+  xdg.configFile."hypr/dms/colors.conf".text = "";
+  xdg.configFile."hypr/dms/layout.conf".text = "";
+  xdg.configFile."hypr/dms/outputs.conf".text = "monitor = eDP-1, 1920x1200@60.003, 0x0, 1, vrr, 0";
 }

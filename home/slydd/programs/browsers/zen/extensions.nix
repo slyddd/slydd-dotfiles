@@ -24,6 +24,7 @@
         vimium
         catppuccin-web-file-icons
         bitwarden
+        sponsorblock
       ];
 
       mods = [

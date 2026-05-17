@@ -9,12 +9,7 @@
         urls = [
           {
             template = "https://mynixos.com/search?q={searchTerms}";
-            params = [
-              {
-                name = "query";
-                value = "searchTerms";
-              }
-            ];
+            params = [ ];
           }
         ];
 
@@ -26,11 +21,19 @@
         name = "Nixpkgs Search";
         urls = [
           {
-            template = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
+            template = "https://search.nixos.org/packages?query={searchTerms}";
             params = [
               {
-                name = "query";
-                value = "searchTerms";
+                name = "channel";
+                value = "unstable";
+              }
+              {
+                name = "include_modular_service_options";
+                value = "1";
+              }
+              {
+                name = "include_nixos_options";
+                value = "1";
               }
             ];
           }
@@ -45,12 +48,7 @@
         urls = [
           {
             template = "https://www.pinterest.com/search/pins/?q={searchTerms}";
-            params = [
-              {
-                name = "query";
-                value = "searchTerms";
-              }
-            ];
+            params = [ ];
           }
         ];
 
@@ -62,16 +60,23 @@
         urls = [
           {
             template = "https://alternativeto.net/browse/search/?q={searchTerms}";
-            params = [
-              {
-                name = "query";
-                value = "searchTerms";
-              }
-            ];
+            params = [ ];
           }
         ];
 
         definedAliases = [ "@alt" ];
+      };
+
+      youtube = {
+        name = "Youtube";
+        urls = [
+          {
+            template = "https://www.youtube.com/results?search_query={searchTerms}";
+            params = [ ];
+          }
+        ];
+
+        definedAliases = [ "@video" ];
       };
     };
   };

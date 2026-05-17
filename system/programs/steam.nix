@@ -11,7 +11,6 @@
 
   jovian = {
     hardware.has.amd.gpu = true;
-    steamos.useSteamOSConfig = true;
 
     steam = {
       enable = true;
@@ -36,7 +35,10 @@
     DXVK_HDR = "0";
     PROTON_ENABLE_AMD_AGS = "1";
     PROTON_ENABLE_NVAPI = "1";
-    ENABLE_GAMESCOPE_WSI = "1";
-    STEAM_MULTIPLE_XWAYLANDS = "1";
   };
+
+  system.activationScripts.decky-cef.text = ''
+    install -Dm644 /dev/null /home/slydd/.steam/steam/.cef-enable-remote-debugging
+    chown slydd:users /home/slydd/.steam/steam/.cef-enable-remote-debugging
+  '';
 }

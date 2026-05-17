@@ -11,4 +11,5 @@
     ./bluetooth.nix
     ./sunshine.nix
   ];
+  services.flatpak.enable = true;
 }

@@ -40,6 +40,12 @@
     "quiet"
     "splash"
     "mem_sleep_default=deep"
+    "i8042.reset"
+    "i8042.kbdreset=1"
+    "i8042.nopnp"
+    "i8042.nomux"
+    "i8042.noloop"
+    "atkbd.reset=1"
   ];
 
   boot.kernelModules = [ "uinput" ];
