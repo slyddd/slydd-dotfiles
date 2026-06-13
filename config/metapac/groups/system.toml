@@ -1,0 +1,43 @@
+arch = { packages = [
+  # Linux core
+  "base",
+  "base-devel",
+  "linux",
+  "linux-firmware",
+  "linux-headers",
+
+  # Boot & EFI
+  "efibootmgr",
+  "grub",
+  "grub-btrfs",
+  "sbctl",
+  "plymouth",
+
+  # Microcode
+  "amd-ucode",
+  "sof-firmware",
+
+  # Filesystem & storage
+  "btrfs-progs",
+
+  # System utilities
+  "acpid",
+  "inotify-tools",
+  "rsync",
+  "upower",
+  "usbutils",
+  "zram-generator",
+
+  # Power management
+  "conservation_mode",
+  "system76-power",
+
+  # Snapshots
+  "snap-pac",
+  "snapper",
+
+  # Package management
+  "paru",
+  "paru-debug",
+  "reflector",
+] }

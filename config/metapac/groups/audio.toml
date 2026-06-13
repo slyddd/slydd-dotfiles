@@ -1,0 +1,14 @@
+arch = { packages = [
+  # Audio server
+  "pipewire",
+  "pipewire-jack",
+  "pipewire-pulse",
+
+  # Audio utilities
+  "alsa-utils",
+  "pwvucontrol",
+
+  # Audio applications
+  "spicetify-bin",
+  "spotify",
+] }

@@ -1,0 +1,6 @@
+arch = { packages = [
+  # Bluetooth
+  "blueman",
+  "bluez",
+  "bluez-utils",
+] }

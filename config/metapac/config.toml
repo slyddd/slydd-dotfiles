@@ -1,0 +1,7 @@
+enabled_backends = ["arch", "bun", "vscode"]
+
+[arch]
+package_manager = "paru"
+
+[vscode]
+variant = "codium"

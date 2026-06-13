@@ -1,0 +1,27 @@
+arch = { packages = [
+  # Runtime
+  "bun",
+
+  # Development tools
+  "neovim",
+  "vscodium-bin",
+  "zed",
+  "cursor-bin",
+
+  # CLI
+  "git",
+  "github-cli",
+] }
+
+# Bun packages (development tools)
+bun = { packages = ["eslint", "prettier"] }
+
+# VSCode extensions
+vscode = { packages = [
+  "catppuccin.catppuccin-vsc",
+  "etienne-lescot.n8n-as-code",
+  "openai.chatgpt",
+  "pkief.material-icon-theme",
+  "pkief.material-product-icons",
+  "vscodevim.vim",
+] }

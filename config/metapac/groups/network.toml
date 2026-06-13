@@ -1,0 +1,8 @@
+arch = { packages = [
+  # Network utilities
+  "openssh",
+  "tailscale",
+  "ufw",
+  "syncthing",
+  "networkmanager",
+] }

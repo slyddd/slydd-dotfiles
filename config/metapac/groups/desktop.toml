@@ -1,0 +1,41 @@
+arch = { packages = [
+  # Desktop environments
+  "cosmic-session",
+  "hyprland",
+
+  # Display server & portals
+  "xdg-desktop-portal-cosmic",
+  "xdg-desktop-portal-hyprland",
+
+  # Display managers & themes
+  "ly",
+
+  # Cursors & icons
+  "bibata-cursor-theme-bin",
+  "kora-icon-theme",
+
+  # Window manager utilities
+  "nwg-look",
+  "wev",
+  "wlsunset",
+  "grim",
+  "slurp",
+  "tesseract",
+  "tesseract-data-eng",
+  "tesseract-data-spa",
+  "imagemagick",
+  "zbar",
+  "wl-screenrec-git",
+  "hyprpicker",
+  "translate-shell",
+
+  # Fonts
+  "noto-fonts-emoji",
+  "ttf-firacode-nerd",
+  "ttf-ms-fonts",
+  "ttf-roboto",
+
+  # Qt libraries
+  "qt6-multimedia-ffmpeg",
+  "qt6-virtualkeyboard",
+] }

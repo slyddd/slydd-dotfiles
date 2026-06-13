@@ -1,0 +1,33 @@
+arch = { packages = [
+  # Shell & terminal
+  "kitty",
+  "oh-my-zsh-git",
+  "starship",
+  "zsh",
+
+  # CLI tools
+  "bat",
+  "fzf",
+  "btop",
+  "stow",
+  "metapac",
+  "android-tools",
+  "unzip",
+  "rbw",
+  "fastfetch",
+  "eza",
+  "wget",
+
+  # Zsh plugins
+  "zsh-autosuggestions",
+  "zsh-syntax-highlighting",
+  "fzf-tab",
+
+  # Clipboard
+  "cliphist",
+  "wl-clipboard",
+
+  # Input & keyboard
+  "input-remapper-git",
+  "wtype",
+] }

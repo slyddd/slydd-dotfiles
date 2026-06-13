@@ -1,0 +1,15 @@
+arch = { packages = [
+  # Browsers
+  "vivaldi",
+  "zen-browser-bin",
+
+  # Utilities
+  "bitwarden",
+  "ferdium-bin",
+  "equibop-bin",
+  "noctalia-shell",
+  "ollama",
+  "obsidian",
+  "kdeconnect",
+  "nautilus",
+] }
