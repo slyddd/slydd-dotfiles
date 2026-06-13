@@ -1,3 +1,6 @@
 # Equibop state and session data
 config/equibop/sessionData
 config/equibop/state.json
+
+# ignore kitty backup files
+config/kitty/*.bak
