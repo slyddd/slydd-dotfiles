@@ -2,105 +2,105 @@
 -- Generated with Matugen
 local colors = {
 
-  background = "#141218",
+  background = "#1a1110",
 
   error = "#ffb4ab",
 
   error_container = "#93000a",
 
-  inverse_on_surface = "#322f35",
+  inverse_on_surface = "#392e2d",
 
-  inverse_primary = "#67558e",
+  inverse_primary = "#904a44",
 
-  inverse_surface = "#e7e0e8",
+  inverse_surface = "#f1dedc",
 
-  on_background = "#e7e0e8",
+  on_background = "#f1dedc",
 
   on_error = "#690005",
 
   on_error_container = "#ffdad6",
 
-  on_primary = "#38265c",
+  on_primary = "#561e1a",
 
-  on_primary_container = "#eaddff",
+  on_primary_container = "#ffdad6",
 
-  on_primary_fixed = "#220f46",
+  on_primary_fixed = "#3b0907",
 
-  on_primary_fixed_variant = "#4f3d74",
+  on_primary_fixed_variant = "#73332e",
 
-  on_secondary = "#342d40",
+  on_secondary = "#442927",
 
-  on_secondary_container = "#e9def8",
+  on_secondary_container = "#ffdad6",
 
-  on_secondary_fixed = "#1e182b",
+  on_secondary_fixed = "#2c1513",
 
-  on_secondary_fixed_variant = "#4a4358",
+  on_secondary_fixed_variant = "#5d3f3c",
 
-  on_surface = "#e7e0e8",
+  on_surface = "#f1dedc",
 
-  on_surface_variant = "#cbc4cf",
+  on_surface_variant = "#d8c2bf",
 
-  on_tertiary = "#4a2530",
+  on_tertiary = "#3f2e04",
 
-  on_tertiary_container = "#ffd9e1",
+  on_tertiary_container = "#fedfa6",
 
-  on_tertiary_fixed = "#31101c",
+  on_tertiary_fixed = "#261900",
 
-  on_tertiary_fixed_variant = "#643b47",
+  on_tertiary_fixed_variant = "#584419",
 
-  outline = "#948f99",
+  outline = "#a08c8a",
 
-  outline_variant = "#49454e",
+  outline_variant = "#534341",
 
-  primary = "#d2bcfd",
+  primary = "#ffb4ac",
 
-  primary_container = "#4f3d74",
+  primary_container = "#73332e",
 
-  primary_fixed = "#eaddff",
+  primary_fixed = "#ffdad6",
 
-  primary_fixed_dim = "#d2bcfd",
+  primary_fixed_dim = "#ffb4ac",
 
   scrim = "#000000",
 
-  secondary = "#ccc2db",
+  secondary = "#e7bdb8",
 
-  secondary_container = "#4a4358",
+  secondary_container = "#5d3f3c",
 
-  secondary_fixed = "#e9def8",
+  secondary_fixed = "#ffdad6",
 
-  secondary_fixed_dim = "#ccc2db",
+  secondary_fixed_dim = "#e7bdb8",
 
   shadow = "#000000",
 
-  source_color = "#b1a9bb",
+  source_color = "#f90b21",
 
-  surface = "#141218",
+  surface = "#1a1110",
 
-  surface_bright = "#3b383e",
+  surface_bright = "#423735",
 
-  surface_container = "#211f24",
+  surface_container = "#271d1c",
 
-  surface_container_high = "#2b292f",
+  surface_container_high = "#322826",
 
-  surface_container_highest = "#36343a",
+  surface_container_highest = "#3d3231",
 
-  surface_container_low = "#1d1b20",
+  surface_container_low = "#231918",
 
-  surface_container_lowest = "#0f0d13",
+  surface_container_lowest = "#140c0b",
 
-  surface_dim = "#141218",
+  surface_dim = "#1a1110",
 
-  surface_tint = "#d2bcfd",
+  surface_tint = "#ffb4ac",
 
-  surface_variant = "#49454e",
+  surface_variant = "#534341",
 
-  tertiary = "#f0b8c6",
+  tertiary = "#e0c38c",
 
-  tertiary_container = "#643b47",
+  tertiary_container = "#584419",
 
-  tertiary_fixed = "#ffd9e1",
+  tertiary_fixed = "#fedfa6",
 
-  tertiary_fixed_dim = "#f0b8c6",
+  tertiary_fixed_dim = "#e0c38c",
 
 }
 

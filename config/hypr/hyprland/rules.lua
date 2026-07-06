@@ -49,7 +49,6 @@ local floating_windows = {
   "com.saivert.pwvucontrol",
   "blueman-manager",
   "org.kde.kdeconnect.app",
-  "waypaper",
   "nm-connection-editor"
 }
 hl.window_rule({
@@ -59,6 +58,14 @@ hl.window_rule({
   center = true,
   pin    = true,
   size   = { 500, 500 },
+})
+hl.window_rule({
+  name   = "waypaper-floating",
+  match  = { class = "waypaper" },
+  float  = true,
+  center = true,
+  pin    = true,
+  size   = { 800, 500 },
 })
 
 --- Decrease opacity on zen browser
