@@ -1,0 +1,24 @@
+# ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+# ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+# ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+
+# Set up open-router
+[ui]
+primary = "openrouter"
+
+[openrouter]
+enabled = true
+api_key_env = "OPENROUTER_API_KEY"
+
+# Disable useless providers
+[anthropic]
+enabled = false
+
+[openai]
+enabled = false
+
+[zai]
+enabled = false
+
+[deepseek]
+enabled = false
