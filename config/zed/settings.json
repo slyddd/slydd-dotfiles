@@ -1,0 +1,105 @@
+{
+  "edit_predictions": {
+    "mode": "subtle",
+    "provider": "open_ai_compatible_api",
+    "open_ai_compatible_api": {
+      "prompt_format": "codestral",
+      "model": "mistralai/codestral-2508@preset/inline-completion",
+      "api_url": "https://openrouter.ai/api/v1/completions",
+    },
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "git_panel": {
+    "show_count_badge": false,
+    "file_icons": true,
+    "tree_view": true,
+  },
+  "project_panel": {
+    "hide_root": true,
+    "indent_guides": {
+      "show": "never",
+    },
+    "git_status_indicator": true,
+    "diagnostic_badges": false,
+    "bold_folder_labels": true,
+    "indent_size": 15.0,
+    "hide_gitignore": true,
+    "default_width": 200.0,
+    "dock": "left",
+  },
+  "active_pane_modifiers": {
+    "border_size": 2.0,
+    "inactive_opacity": 0.7,
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false,
+  },
+  "tabs": {
+    "show_close_button": "hidden",
+    "show_diagnostics": "errors",
+    "file_icons": true,
+    "git_status": true,
+  },
+  "title_bar": {
+    "show_branch_status_icon": false,
+  },
+  "diagnostics": {
+    "inline": {
+      "padding": 4,
+      "enabled": true,
+    },
+  },
+  "colorize_brackets": true,
+  "code_lens": "on",
+  "inlay_hints": {
+    "show_background": true,
+    "enabled": true,
+  },
+  "tab_size": 2,
+  "vim": {
+    "cursor_shape": {
+      "normal": "hollow",
+    },
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "selections_menu": false,
+    "quick_actions": false,
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "relative_line_numbers": "enabled",
+  "agent_ui_font_size": 14.0,
+  "ui_font_size": 14.0,
+  "ui_font_family": "Roboto",
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 13.0,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "theme": "Matugen Dark",
+  "when_closing_with_no_tabs": "keep_window_open",
+
+  // Vim
+  "vim_mode": true,
+
+  // Private values
+  "redact_private_values": true,
+
+  "buffer_font_features": {
+    "calt": true,
+  },
+
+  "max_tabs": 10,
+}
