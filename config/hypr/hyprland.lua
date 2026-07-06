@@ -1,9 +1,13 @@
--- require("myColors")
-require("keybinds")
-require("autostart")
-require("env")
-require("ui")
-require("rules")
+-- ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+-- ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+-- ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+-- Hyprland Configuration File
+require("hyprland/keybinds")
+require("hyprland/binds")
+require("hyprland/autostart")
+require("hyprland/env")
+require("hyprland/ui")
+require("hyprland/rules")
 
 
 ---- MONITORS ----
@@ -17,8 +21,8 @@ hl.monitor({
 ----  MISC  ----
 hl.config({
   misc = {
-    force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+    force_default_wallpaper = 0,
+    disable_hyprland_logo   = true,
   },
 })
 

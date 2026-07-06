@@ -1,15 +1,5 @@
 --- Load noctalia colors ---
-local colors = {}
-local themeFile = io.open(os.getenv("HOME") .. "/.config/hypr/noctalia/noctalia-colors.conf")
-if themeFile then
-  local content = themeFile:read("*a")
-  themeFile:close()
-
-  for name, value in string.gmatch(content, "%$(%w+)%s*=%s*(rgb%(%w+%))") do
-    colors[name] = value
-  end
-end
-
+local colors = require("hyprland/colors")
 --- Set Config ---
 hl.config({
   general = {
@@ -33,7 +23,7 @@ hl.config({
     rounding_power     = 2,
 
     -- Change transparency of focused and unfocused windows
-    active_opacity     = 0.98,
+    active_opacity     = 0.9,
     inactive_opacity   = 0.9,
     fullscreen_opacity = 1,
 
@@ -47,7 +37,7 @@ hl.config({
       enabled      = true,
       range        = 4,
       render_power = 3,
-      color        = colors.surface_lowest,
+      color        = colors.surface_dim,
     },
 
 
@@ -69,6 +59,7 @@ hl.config({
 hl.config({
   scrolling = {
     fullscreen_on_one_column = true,
+    follow_min_visible = 0
   },
 })
 

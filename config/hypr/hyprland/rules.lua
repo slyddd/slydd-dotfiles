@@ -25,13 +25,14 @@ hl.window_rule({
   no_dim  = true,
 })
 
---- Blur noctalia
+--- Blur Rofi
 hl.layer_rule({
-  name         = "noctalia",
-  match        = { namespace = "noctalia-background-.*$" },
+  name         = "rofi",
+  match        = { namespace = "rofi" },
   blur         = true,
   ignore_alpha = 0.5,
   blur_popups  = true,
+  dim_around   = true
 })
 
 --- Smart gaps
@@ -43,10 +44,43 @@ hl.window_rule({ match = { float = false, workspace = "f[1]s[false]" }, border_s
 hl.window_rule({ match = { float = false, workspace = "f[1]s[false]" }, rounding = 0 })
 
 --- Floating windows
+local floating_windows = {
+  "Bitwarden",
+  "com.saivert.pwvucontrol",
+  "blueman-manager",
+  "org.kde.kdeconnect.app",
+  "waypaper",
+  "nm-connection-editor"
+}
 hl.window_rule({
   name   = "floating-windows",
-  match  = { class = "Bitwarden|com.saivert.pwvucontrol|blueman-manager" },
+  match  = { class = table.concat(floating_windows, "|") },
   float  = true,
   center = true,
   pin    = true,
+  size   = { 500, 500 },
+})
+
+--- Decrease opacity on zen browser
+hl.window_rule({
+  name    = "zen-browser",
+  match   = { class = "zen" },
+  opacity = 0.98,
+})
+
+--- Persistend workspaces
+for i = 1, 5 do
+  hl.workspace_rule({
+    workspace  = string.format(i),
+    persistent = true,
+  })
+end
+
+--- blur waybar
+hl.layer_rule({
+  name         = "waybar",
+  match        = { class = "waybar" },
+  blur         = true,
+  blur_popups  = true,
+  ignore_alpha = 0.2,
 })
