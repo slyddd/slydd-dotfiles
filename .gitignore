@@ -1,6 +1,13 @@
-# Equibop state and session data
-config/equibop/sessionData
-config/equibop/state.json
-
 # ignore kitty backup files
 config/kitty/*.bak
+
+# ignore zsh completion dump files and history
+.zcompdump*
+zsh_history
+
+# ignore .env
+.env
+
+# Calcure data files
+config/calcure/*.csv
+config/calcure/*.log
