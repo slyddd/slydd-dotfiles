@@ -1,4 +1,11 @@
 arch = { packages = [
   # Games & launchers
   "prismlauncher",
+  "heroic-games-launcher-bin",
+  "libretro-core-info",
+  "steam",
+  "retroarch",
+  "retroarch-assets-xmb",
+  "steam-rom-manager-bin",
+  "wine",
 ] }

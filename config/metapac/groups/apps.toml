@@ -1,15 +1,20 @@
 arch = { packages = [
   # Browsers
-  "vivaldi",
   "zen-browser-bin",
 
   # Utilities
   "bitwarden",
   "ferdium-bin",
-  "equibop-bin",
-  "noctalia-shell",
-  "ollama",
   "obsidian",
   "kdeconnect",
   "nautilus",
+  "discord",
+
+  # CLI
+  "ai-usagebar-bin",
+  "bluetui",
+  "calcure",
+  "speedtest-cli",
+  "wiremix",
+  "wlctl-bin",
 ] }

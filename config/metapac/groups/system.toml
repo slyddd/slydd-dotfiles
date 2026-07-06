@@ -27,6 +27,7 @@ arch = { packages = [
   "upower",
   "usbutils",
   "zram-generator",
+  "perl-image-exiftool",
 
   # Power management
   "conservation_mode",

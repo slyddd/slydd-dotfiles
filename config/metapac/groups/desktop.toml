@@ -3,6 +3,13 @@ arch = { packages = [
   "cosmic-session",
   "hyprland",
 
+  # Hyprland Utils
+  "hypridle",
+  "hyprlock",
+  "hyprpolkitagent",
+  "hyprsunset",
+  "hyprpicker",
+
   # Display server & portals
   "xdg-desktop-portal-cosmic",
   "xdg-desktop-portal-hyprland",
@@ -17,17 +24,25 @@ arch = { packages = [
   # Window manager utilities
   "nwg-look",
   "wev",
-  "wlsunset",
   "grim",
   "slurp",
   "tesseract",
   "tesseract-data-eng",
   "tesseract-data-spa",
   "imagemagick",
-  "zbar",
   "wl-screenrec-git",
-  "hyprpicker",
   "translate-shell",
+  "awww",
+  "matugen",
+
+  # UI Tool
+  "rofi",
+  "swayosd",
+  "waybar-git",
+  "waypaper",
+
+  # Waybar Modules
+  "waybar-lyric",
 
   # Fonts
   "noto-fonts-emoji",
@@ -38,4 +53,7 @@ arch = { packages = [
   # Qt libraries
   "qt6-multimedia-ffmpeg",
   "qt6-virtualkeyboard",
+  "qt5-tools",
+  "qt5-websockets",
+  "qt6-websockets",
 ] }

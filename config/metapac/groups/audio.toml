@@ -9,6 +9,5 @@ arch = { packages = [
   "pwvucontrol",
 
   # Audio applications
-  "spicetify-bin",
   "spotify",
 ] }

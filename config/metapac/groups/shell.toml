@@ -17,11 +17,15 @@ arch = { packages = [
   "fastfetch",
   "eza",
   "wget",
+  "jq",
+  "nix",
 
   # Zsh plugins
   "zsh-autosuggestions",
   "zsh-syntax-highlighting",
+  "nix-zsh-completions",
   "fzf-tab",
+  "zsh-nix-shell",
 
   # Clipboard
   "cliphist",
