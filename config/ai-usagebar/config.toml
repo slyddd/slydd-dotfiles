@@ -1,6 +1,7 @@
 # ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
 # ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
 # ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+# AI Usage Bar Configuration File
 
 # Set up open-router
 [ui]
