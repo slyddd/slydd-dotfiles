@@ -1,0 +1,12 @@
+{
+  "group/control-center": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "bluetooth",
+      "pulseaudio",
+      "custom/battery",
+      "group/tray-drawer",
+    ],
+  },
+}

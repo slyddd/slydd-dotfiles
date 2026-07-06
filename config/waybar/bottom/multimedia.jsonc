@@ -1,0 +1,6 @@
+{
+  "group/multimedia": {
+    "orientation": "horizontal",
+    "modules": ["image#album-art", "custom/info", "custom/lyrics"],
+  },
+}

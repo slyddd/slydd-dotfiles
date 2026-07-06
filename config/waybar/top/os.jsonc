@@ -1,0 +1,10 @@
+{
+  "custom/os": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+      "default": "",
+    },
+    "on-click": "rofi -show run",
+  },
+}

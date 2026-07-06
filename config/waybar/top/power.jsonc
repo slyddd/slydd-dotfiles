@@ -1,0 +1,10 @@
+{
+  "custom/power": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+      "default": " ⏻",
+    },
+    "on-click": "rofi -show powermenu -modi powermenu:$HOME/.local/bin/rofi-power-menu -theme-str 'listview {columns:3; lines: 2; scrollbar: false;} inputbar {enabled: false;} element {orientation: vertical;}'",
+  },
+}

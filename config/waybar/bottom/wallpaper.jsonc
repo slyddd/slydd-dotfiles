@@ -1,0 +1,10 @@
+{
+  "custom/wallpaper": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+      "default": "",
+    },
+    "on-click": "waypaper",
+  },
+}

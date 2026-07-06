@@ -1,0 +1,68 @@
+/* Os Module Style */
+#custom-os {
+  min-width: 15px;
+}
+
+#custom-os:hover {
+  color: @primary;
+}
+
+/* Hyprland Workspaces Style */
+#workspaces button {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: @primary;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#workspaces button.active:hover,
+#workspaces button.empty:hover,
+#workspaces button.special:hover {
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+  color: @text;
+}
+
+#workspaces button.active,
+#workspaces button.special {
+  color: @tertiary;
+}
+
+#window,
+#clock {
+  font-family: Roboto;
+}
+
+/* Hyprland Submap Style */
+#submap {
+  padding: 0 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: @primary;
+  color: @on_primary;
+}
+
+/* Privacy Module Style */
+#custom-privacydots {
+  color: @primary;
+  margin: 0 5px;
+}
+
+/* Power Module Style */
+#custom-power {
+  min-width: 25px;
+}
+
+#custom-power:hover,
+#clock:hover {
+  color: @primary;
+}

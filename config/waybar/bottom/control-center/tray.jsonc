@@ -1,0 +1,22 @@
+{
+  "group/tray-drawer": {
+    "modules": ["custom/tray-icon", "tray"],
+    "orientation": "horizontal",
+    "drawer": {
+      "children-class": "tray-icons",
+    },
+  },
+
+  "custom/tray-icon": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+      "default": "",
+    },
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "show-passive-items": true,
+  },
+}

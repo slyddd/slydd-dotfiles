@@ -1,0 +1,12 @@
+{
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "",
+    "format-connected": "󰂱 {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t {device_battery_percentage}%",
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e bluetui', { float = true, size = {600, 600}, center = true })\"",
+    "on-click-right": "blueman-manager",
+  },
+}

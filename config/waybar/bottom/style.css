@@ -1,0 +1,120 @@
+/* General Module Style */
+#custom-kdeconnect,
+#custom-tailscale,
+#custom-ai-usage,
+#custom-wallpaper,
+#control-center,
+#tray,
+#multimedia {
+  padding: 10px;
+  min-width: 20px;
+  border-radius: 10px;
+  color: @on_background;
+  background-color: alpha(@background, 0.7);
+}
+
+#custom-kdeconnect:hover,
+#custom-tailscale:hover,
+#custom-ai-usage:hover,
+#custom-wallpaper:hover {
+  color: @primary;
+}
+
+/* Kde Module Style */
+#custom-kdeconnect.low {
+  background-color: alpha(@error, 0.7);
+  color: @on_error;
+}
+
+#custom-kdeconnect:hover {
+  opacity: 0.8;
+}
+
+/* Tailscale Module Style */
+#custom-tailscale.stopped {
+  color: alpha(@on_background, 0.7);
+}
+
+/* AI Usage Module Style */
+#custom-ai-usage.high,
+#custom-ai-usage.critical {
+  background-color: alpha(@error, 0.7);
+  color: @on_error;
+}
+
+/* Control Center General Module Style */
+#network,
+#pulseaudio,
+#bluetooth,
+#custom-battery,
+#tray-drawer,
+#tray {
+  padding: 10px;
+  min-width: 30px;
+  border-radius: 10px;
+}
+
+#custom-tray-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tray widget > image {
+  padding: 5px;
+}
+
+#custom-tray-icon:hover,
+#network:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#custom-info:hover {
+  color: @primary;
+}
+
+#tray {
+  background-color: alpha(@primary, 0.2);
+  margin: 0 5px;
+}
+
+/* Battery Module Style */
+#custom-battery.charging {
+  padding-left: 10px;
+  background-color: alpha(@primary, 0.7);
+  color: @on_primary;
+}
+
+#custom-battery.low {
+  padding-left: 10px;
+  background-color: alpha(@error, 0.7);
+  color: @on_error;
+}
+
+/* AI Module Style */
+#custom-ai-usage {
+  font-family: Roboto;
+}
+
+/* Multimedia General Module Style */
+#multimedia {
+  font-family: Roboto;
+}
+
+#custom-info,
+#custom-lyrics {
+  padding: 10px;
+}
+
+#image.album-art {
+  padding: 0;
+}
+
+#custom-lyrics {
+  color: alpha(@on_background, 0.7);
+  font-style: italic;
+}
+
+/* Tray Module Style */
+#tray menu {
+  font-family: Roboto;
+  margin-bottom: 20px;
+}

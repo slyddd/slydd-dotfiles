@@ -1,0 +1,16 @@
+{
+  "network": {
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": "",
+      "ethernet": "󰈀",
+      "disconnected": "",
+    },
+    "tooltip-format": "{ifname}\n{ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{essid}\n{ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wlctl', { float = true, size = {600, 600}, center = true })\"",
+    "on-click-right": "nm-connection-editor",
+  },
+}

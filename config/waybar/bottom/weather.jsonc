@@ -1,0 +1,10 @@
+{
+  "custom/weather": {
+    "format": "{}",
+    "tooltip": true,
+    "return-type": "json",
+    "exec": "$HOME/.config/waybar/bottom/scripts/weather/get_weather.rb",
+    "on-click": "$HOME/.config/waybar/bottom/scripts/weather/get_weather.rb --next",
+    "interval": 900,
+  },
+}

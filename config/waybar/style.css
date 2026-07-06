@@ -1,0 +1,35 @@
+@import url("colors.css");
+@import url("top/style.css");
+@import url("bottom/style.css");
+
+* {
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  background-color: transparent;
+}
+
+#waybar {
+  font-family: Fira Code Nerd Font;
+}
+
+#waybar.top {
+  background-color: alpha(@background, 0.9);
+  color: @on_background;
+}
+
+#waybar.top .horizontal {
+  padding: 2px 8px;
+}
+
+#waybar.bottom .horizontal {
+  padding: 2px;
+}
+
+decoration {
+  border-radius: 5px;
+  background-color: alpha(@background, 0.7);
+}

@@ -1,0 +1,9 @@
+{
+  "custom/ai-usage": {
+    "exec": "$HOME/.config/waybar/bottom/scripts/format-ai.sh",
+    "return-type": "json",
+    "interval": 300,
+    "tooltip": true,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e ai-usagebar-tui', { float = true, size = {500, 500}, center = true })\"",
+  },
+}

@@ -1,0 +1,16 @@
+{
+  "custom/tailscale": {
+    "exec": "$HOME/.config/waybar/bottom/scripts/tailscale.sh --status 'ipv4'",
+    "on-click": "exec $HOME/.config/waybar/bottom/scripts/tailscale.sh --toggle",
+    "on-click-right": "exec $HOME/.config/waybar/bottom/scripts/tailscale.sh --select-exit-node",
+    "exec-on-event": true,
+    "format": "{icon}",
+    "format-icons": {
+      "connected": "󰯄",
+      "stopped": "󰦞",
+    },
+    "tooltip": true,
+    "return-type": "json",
+    "interval": 1,
+  },
+}

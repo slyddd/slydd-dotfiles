@@ -1,0 +1,13 @@
+{
+  "custom/info": {
+    "exec": "$HOME/.config/waybar/bottom/scripts/multimedia.sh --info",
+    "return-type": "json",
+    "format": "{icon} {text}",
+    "format-icons": {
+      "paused": " ",
+    },
+    "hide-empty-text": true,
+    "interval": 30,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('spotify', { workspace = 'special:minimize' })\"",
+  },
+}

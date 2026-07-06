@@ -1,0 +1,7 @@
+{
+  "image#album-art": {
+    "exec": "$HOME/.config/waybar/bottom/scripts/multimedia.sh --cover",
+    "size": 30,
+    "interval": 30,
+  },
+}
