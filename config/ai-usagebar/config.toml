@@ -9,7 +9,7 @@ primary = "openrouter"
 
 [openrouter]
 enabled = true
-api_key_env = "OPENROUTER_API_KEY"
+api_key_env = "OPENROUTER_ADMIN_API_KEY"
 
 # Disable useless providers
 [anthropic]

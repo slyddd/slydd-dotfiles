@@ -1,7 +1,7 @@
 {
   "edit_predictions": {
     "mode": "subtle",
-    "provider": "open_ai_compatible_api",
+    "provider": "copilot",
     "open_ai_compatible_api": {
       "prompt_format": "codestral",
       "model": "mistralai/codestral-2508@preset/inline-completion",

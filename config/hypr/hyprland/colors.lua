@@ -1,106 +1,109 @@
--- Hyprland Colors
--- Generated with Matugen
+-- ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+-- ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+-- ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+-- Hyprland Colors (Generated with Matugen)
+
 local colors = {
 
-  background = "#1a1110",
+  background = "#14140c",
 
   error = "#ffb4ab",
 
   error_container = "#93000a",
 
-  inverse_on_surface = "#392e2d",
+  inverse_on_surface = "#323128",
 
-  inverse_primary = "#904a44",
+  inverse_primary = "#646116",
 
-  inverse_surface = "#f1dedc",
+  inverse_surface = "#e6e2d5",
 
-  on_background = "#f1dedc",
+  on_background = "#e6e2d5",
 
   on_error = "#690005",
 
   on_error_container = "#ffdad6",
 
-  on_primary = "#561e1a",
+  on_primary = "#343200",
 
-  on_primary_container = "#ffdad6",
+  on_primary_container = "#ebe68d",
 
-  on_primary_fixed = "#3b0907",
+  on_primary_fixed = "#1e1d00",
 
-  on_primary_fixed_variant = "#73332e",
+  on_primary_fixed_variant = "#4b4900",
 
-  on_secondary = "#442927",
+  on_secondary = "#333118",
 
-  on_secondary_container = "#ffdad6",
+  on_secondary_container = "#e8e4be",
 
-  on_secondary_fixed = "#2c1513",
+  on_secondary_fixed = "#1d1c05",
 
-  on_secondary_fixed_variant = "#5d3f3c",
+  on_secondary_fixed_variant = "#49482c",
 
-  on_surface = "#f1dedc",
+  on_surface = "#e6e2d5",
 
-  on_surface_variant = "#d8c2bf",
+  on_surface_variant = "#cac7b5",
 
-  on_tertiary = "#3f2e04",
+  on_tertiary = "#0d3729",
 
-  on_tertiary_container = "#fedfa6",
+  on_tertiary_container = "#c0ecd6",
 
-  on_tertiary_fixed = "#261900",
+  on_tertiary_fixed = "#002116",
 
-  on_tertiary_fixed_variant = "#584419",
+  on_tertiary_fixed_variant = "#264e3e",
 
-  outline = "#a08c8a",
+  outline = "#949181",
 
-  outline_variant = "#534341",
+  outline_variant = "#49473a",
 
-  primary = "#ffb4ac",
+  primary = "#ceca74",
 
-  primary_container = "#73332e",
+  primary_container = "#4b4900",
 
-  primary_fixed = "#ffdad6",
+  primary_fixed = "#ebe68d",
 
-  primary_fixed_dim = "#ffb4ac",
+  primary_fixed_dim = "#ceca74",
 
   scrim = "#000000",
 
-  secondary = "#e7bdb8",
+  secondary = "#cbc8a4",
 
-  secondary_container = "#5d3f3c",
+  secondary_container = "#49482c",
 
-  secondary_fixed = "#ffdad6",
+  secondary_fixed = "#e8e4be",
 
-  secondary_fixed_dim = "#e7bdb8",
+  secondary_fixed_dim = "#cbc8a4",
 
   shadow = "#000000",
 
-  source_color = "#f90b21",
+  source_color = "#d1cc54",
 
-  surface = "#1a1110",
+  surface = "#14140c",
 
-  surface_bright = "#423735",
+  surface_bright = "#3b3930",
 
-  surface_container = "#271d1c",
+  surface_container = "#212018",
 
-  surface_container_high = "#322826",
+  surface_container_high = "#2b2a22",
 
-  surface_container_highest = "#3d3231",
+  surface_container_highest = "#36352c",
 
-  surface_container_low = "#231918",
+  surface_container_low = "#1d1c14",
 
-  surface_container_lowest = "#140c0b",
+  surface_container_lowest = "#0f0e07",
 
-  surface_dim = "#1a1110",
+  surface_dim = "#14140c",
 
-  surface_tint = "#ffb4ac",
+  surface_tint = "#ceca74",
 
-  surface_variant = "#534341",
+  surface_variant = "#49473a",
 
-  tertiary = "#e0c38c",
+  tertiary = "#a5d0bb",
 
-  tertiary_container = "#584419",
+  tertiary_container = "#264e3e",
 
-  tertiary_fixed = "#fedfa6",
+  tertiary_fixed = "#c0ecd6",
 
-  tertiary_fixed_dim = "#e0c38c",
+  tertiary_fixed_dim = "#a5d0bb",
 
 }
 
