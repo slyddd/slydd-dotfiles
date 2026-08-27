@@ -2,7 +2,6 @@
 -- ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
 -- ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
 -- Hyprland Configuration File
-require("hyprland/keybinds")
 require("hyprland/binds")
 require("hyprland/autostart")
 require("hyprland/env")
@@ -13,7 +12,13 @@ require("hyprland/rules")
 ---- MONITORS ----
 hl.monitor({
   output   = "",
-  mode     = "preferred",
+  mode     = "highres",
+  position = "auto",
+  scale    = "1",
+})
+hl.monitor({
+  output   = "HDMI-A-1",
+  mode     = "1920x1080@60.00Hz",
   position = "auto",
   scale    = "1",
 })
@@ -30,11 +35,13 @@ hl.config({
 ---- INPUT ----
 hl.config({
   input = {
-    kb_layout    = "us",
-    kb_variant   = "altgr-intl",
-    follow_mouse = 1,
+    kb_layout                   = "us",
+    kb_variant                  = "altgr-intl",
+    kb_model                    = "thinkpad",
+    follow_mouse                = 0,
+    float_switch_override_focus = 0,
 
-    touchpad     = {
+    touchpad                    = {
       natural_scroll = true,
       disable_while_typing = false,
     },

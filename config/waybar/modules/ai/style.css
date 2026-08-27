@@ -1,0 +1,28 @@
+#ai .warn {
+  background-color: @error;
+  color: @on_error;
+}
+
+#ai.expanded #custom-ai-usage {
+  border-radius: 10px 0 0 10px;
+}
+
+#ai.expanded #custom-ai-left {
+  border-radius: 0 10px 10px 0;
+}
+
+#custom-ai-usage {
+  padding: 5px 10px;
+}
+
+#custom-ai-left {
+  padding-right: 10px;
+}
+
+#custom-ai-usage,
+#custom-ai-left {
+  font-family: Roboto;
+  border-radius: 10px;
+  color: @on_background;
+  background-color: alpha(@background, 0.7);
+}

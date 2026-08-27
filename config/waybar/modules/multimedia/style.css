@@ -1,0 +1,25 @@
+#multimedia {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: @on_background;
+  background-color: alpha(@background, 0.7);
+  font-family: Roboto;
+}
+
+#custom-info,
+#custom-lyrics {
+  padding: 10px;
+}
+
+#custom-info:hover {
+  color: @primary;
+}
+
+#image.album-art {
+  padding: 0;
+}
+
+#custom-lyrics {
+  color: alpha(@on_background, 0.7);
+  font-style: italic;
+}

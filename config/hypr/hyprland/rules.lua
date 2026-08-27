@@ -21,18 +21,17 @@ hl.window_rule({
 hl.window_rule({
   name    = "fullscreen-opacity",
   match   = { fullscreen = true },
-  opacity = 1.0,
+  opacity = "1 override",
   no_dim  = true,
 })
 
 --- Blur Rofi
 hl.layer_rule({
-  name         = "rofi",
-  match        = { namespace = "rofi" },
-  blur         = true,
-  ignore_alpha = 0.5,
-  blur_popups  = true,
-  dim_around   = true
+  name        = "rofi",
+  match       = { namespace = "rofi" },
+  blur        = true,
+  blur_popups = true,
+  dim_around  = true
 })
 
 --- Smart gaps
@@ -71,14 +70,23 @@ hl.window_rule({
 --- Decrease opacity on zen browser
 hl.window_rule({
   name    = "zen-browser",
-  match   = { class = "zen" },
-  opacity = 0.98,
+  match   = { class = "zen|discord" },
+  opacity = "1 override",
+  no_dim  = true,
 })
 
 --- Persistend workspaces
-for i = 1, 5 do
+for i = 1, 10 do
+  local monitor = ""
+  if i <= 5 then
+    monitor = "eDP-1"
+  else
+    monitor = "HDMI-A-1"
+  end
+
   hl.workspace_rule({
     workspace  = string.format(i),
+    monitor    = monitor,
     persistent = true,
   })
 end

@@ -1,0 +1,11 @@
+fallback_to_icons = true
+box_art_dir = ""
+show_entry_source_text = false
+use_bold_entry_title = true
+
+[sort]
+order = "frecency"
+reverse = false
+
+[launchers.steam]
+extra_args = ["-silent"]

@@ -1,0 +1,11 @@
+// ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+// ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+// ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+// Rofi Colors (Generated with Matugen)
+
+* {
+  background: #11131899;
+  on-background: #e2e2e9;
+  primary: #adc6ff;
+  on-primary: #102f60;
+}

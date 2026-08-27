@@ -1,5 +1,3 @@
-local mainMod = "SUPER"
-
 local zoom = {}
 
 function zoom:toggle(state)
@@ -12,7 +10,7 @@ function zoom:set(offset)
   hl.config({ cursor = { zoom_factor = current } })
 end
 
-hl.bind(mainMod .. " + Z", function()
+hl.bind(MainMod .. " + Z", function()
   zoom:toggle(true)
   hl.dispatch(hl.dsp.submap("zoom"))
 end)
@@ -20,7 +18,7 @@ end)
 hl.define_submap("zoom", function()
   hl.bind("XF86AudioRaiseVolume", function() zoom:set(0.5) end)
   hl.bind("XF86AudioLowerVolume", function() zoom:set(-0.5) end)
-  hl.bind(mainMod .. " + Z", function()
+  hl.bind(MainMod .. " + Z", function()
     zoom:toggle(false)
     hl.dispatch(hl.dsp.submap("reset"))
   end)

@@ -1,0 +1,29 @@
+#clock {
+  font-family: Roboto;
+}
+
+#custom-power {
+  min-width: 25px;
+}
+
+#custom-power:hover {
+  color: @primary;
+}
+
+#control-center {
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: @on_background;
+  background-color: alpha(@background, 0.7);
+}
+
+#custom-wallpaper {
+  padding: 10px 18px 10px 15px;
+  border-radius: 10px;
+  color: @on_background;
+  background-color: alpha(@background, 0.7);
+}
+
+#custom-wallpaper:hover {
+  color: @primary;
+}

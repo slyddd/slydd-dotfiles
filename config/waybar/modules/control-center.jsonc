@@ -1,0 +1,12 @@
+{
+  "group/control-center": {
+    "orientation": "horizontal",
+    "modules": [
+      "group/net",
+      "group/blue",
+      "group/audio",
+      "custom/battery",
+      "group/tray-drawer",
+    ],
+  },
+}

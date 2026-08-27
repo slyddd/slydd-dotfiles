@@ -1,0 +1,12 @@
+include=~/.config/mako/colors
+font=Roboto 11
+width=200
+margin=15
+padding=10
+border-size=0
+border-radius=8
+max-icon-size=24
+icon-location=right
+format=<b>%s</b>\n<span size="smaller" fgalpha="60%%">%b</span>
+anchor=bottom-right
+default-timeout=5000

@@ -1,0 +1,35 @@
+{
+  "group/net": {
+    "orientation": "inherit",
+    "modules": ["network#icon", "network#info"],
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true,
+    },
+  },
+
+  "network#icon": {
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": "",
+      "ethernet": "󰈀",
+      "disconnected": "",
+    },
+    "tooltip-format": "{ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wlctl', { float = true, size = {600, 600}, center = true })\"",
+    "on-click-right": "nm-connection-editor",
+  },
+
+  "network#info": {
+    "format": "{ifname}",
+    "format-wifi": "{essid}",
+    "format-disconnected": "",
+    "tooltip-format": "{ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wlctl', { float = true, size = {600, 600}, center = true })\"",
+    "on-click-right": "nm-connection-editor",
+  },
+}

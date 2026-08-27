@@ -3,6 +3,7 @@ arch = { packages = [
   "prismlauncher",
   "heroic-games-launcher-bin",
   "libretro-core-info",
+  "lutris",
   "steam",
   "retroarch",
   "retroarch-assets-xmb",

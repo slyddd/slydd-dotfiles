@@ -1,53 +1,54 @@
---- Load noctalia colors ---
 local colors = require("hyprland/colors")
---- Set Config ---
 hl.config({
   general = {
-    gaps_in          = 5,
-    gaps_out         = 20,
+    gaps_in = 5,
+    gaps_out = 10,
 
-    border_size      = 1,
+    border_size = 1,
 
-    col              = {
-      active_border   = { colors = { colors.primary }, angle = 45 },
+    col = {
+      active_border = {
+        colors = { colors.primary },
+        angle = 45,
+      },
       inactive_border = "rgba(0, 0, 0, 0)",
     },
 
     resize_on_border = true,
-    allow_tearing    = false,
-    layout           = "scrolling",
+    allow_tearing = false,
+    layout = "scrolling",
   },
 
   decoration = {
-    rounding           = 20,
-    rounding_power     = 2,
+    rounding = 20,
+    rounding_power = 2,
 
     -- Change transparency of focused and unfocused windows
-    active_opacity     = 0.9,
-    inactive_opacity   = 0.9,
+    active_opacity = 0.98,
+    inactive_opacity = 0.8,
     fullscreen_opacity = 1,
 
     -- Dim
-    dim_modal          = true,
-    dim_inactive       = true,
-    dim_strength       = 0.4,
-    dim_around         = 0.6,
+    dim_modal = true,
+    dim_inactive = true,
+    dim_strength = 0.4,
+    dim_around = 0.5,
 
-    shadow             = {
-      enabled      = true,
-      range        = 4,
+    shadow = {
+      enabled = true,
+      range = 4,
       render_power = 3,
-      color        = colors.surface_dim,
+      color = colors.surface_dim,
     },
 
 
     blur = {
-      enabled  = true,
-      size     = 3,
-      passes   = 3,
+      enabled = true,
+      size = 2,
+      passes = 3,
       vibrancy = 0.1696,
-      noise    = 0.05,
-      popups   = true,
+      noise = 0.05,
+      popups = true,
     },
   },
 
@@ -59,7 +60,11 @@ hl.config({
 hl.config({
   scrolling = {
     fullscreen_on_one_column = true,
-    follow_min_visible = 0
+    follow_min_visible = 1,
+    column_width = 0.98,
+    focus_fit_method = 0,
+    wrap_focus = false,
+    wrap_swapcol = false
   },
 })
 
@@ -74,7 +79,7 @@ hl.curve("easy", { type = "spring", mass = 1, stiffness = 71.2633, dampening = 1
 
 hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
 hl.animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "easeOutQuint" })
-hl.animation({ leaf = "windows", enabled = true, speed = 4.79, spring = "easy" })
+hl.animation({ leaf = "windows", enabled = true, speed = 1, spring = "easy" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.1, spring = "easy", style = "popin 87%" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.49, bezier = "linear", style = "popin 87%" })
 hl.animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })
@@ -86,6 +91,6 @@ hl.animation({ leaf = "layersOut", enabled = true, speed = 1.5, bezier = "linear
 hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 1.79, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "almostLinear" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, spring = "easy", style = "slidevert" })
+hl.animation({ leaf = "workspacesIn", enabled = true, speed = 10, spring = "easy", style = "slidevert" })
 hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, spring = "easy", style = "slidevert" })
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "easeOutQuint" })

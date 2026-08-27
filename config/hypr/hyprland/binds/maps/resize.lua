@@ -1,5 +1,3 @@
-local mainMod = "SUPER"
-
 local function getCords(direction, velocity)
   local x = 0
   local y = 0
@@ -17,7 +15,7 @@ local function getCords(direction, velocity)
   return { x = x, y = y, relative = true }
 end
 
-hl.bind(mainMod .. " + R", function()
+hl.bind(MainMod .. " + R", function()
   hl.dispatch(hl.dsp.window.float({ action = "enable" }))
   hl.dispatch(hl.dsp.submap("resize"))
 end)

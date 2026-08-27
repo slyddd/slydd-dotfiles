@@ -1,0 +1,26 @@
+{
+  "group/os": {
+    "orientation": "inherit",
+    "modules": ["custom/os", "custom/os-info"],
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true,
+    },
+  },
+
+  // Modules
+  "custom/os": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+      "default": "",
+    },
+    "on-click": "rofi -show drun -show-icons",
+  },
+
+  "custom/os-info": {
+    "exec": "echo \"$USER@$HOSTNAME\"",
+    "interval": "once",
+    "on-click": "rofi -show drun -show-icons",
+  },
+}

@@ -1,0 +1,33 @@
+{
+  "group/multimedia": {
+    "orientation": "horizontal",
+    "modules": ["image#album-art", "custom/info", "custom/lyrics"],
+  },
+
+  // Modules
+  "image#album-art": {
+    "exec": "$HOME/.config/waybar/modules/multimedia/multimedia.sh --cover",
+    "size": 30,
+    "interval": 30,
+  },
+
+  "custom/info": {
+    "exec": "$HOME/.config/waybar/modules/multimedia/multimedia.sh --info",
+    "return-type": "json",
+    "format": "{icon} {text}",
+    "format-icons": {
+      "paused": " ",
+    },
+    "hide-empty-text": true,
+    "interval": 30,
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('spotify', { workspace = 'special:minimize' })\"",
+  },
+
+  "custom/lyrics": {
+    "return-type": "json",
+    "format": "{}",
+    "hide-empty-text": true,
+    "exec": "waybar-lyric --quiet -p spotify -l",
+    "on-click": "waybar-lyric play-pause",
+  },
+}

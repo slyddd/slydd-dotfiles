@@ -1,0 +1,37 @@
+{
+  "group/audio": {
+    "orientation": "inherit",
+    "modules": ["pulseaudio#icon", "pulseaudio#level"],
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": true,
+    },
+  },
+
+  "pulseaudio#icon": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󱡏",
+      "headset": "󱡏",
+      "default": ["󰖀", "󰕾"],
+    },
+    "scroll-step": 1,
+    "tooltip-format": "{desc}\t{volume}%",
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wiremix', { float = true, size = {600, 400}, center = true })\"",
+    "on-click-right": "pwvucontrol",
+    "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "ignored-sinks": ["Easy Effects Sink"],
+  },
+
+  "pulseaudio#level": {
+    "format": "{volume}%",
+    "scroll-step": 1,
+    "tooltip-format": "{desc}\t{volume}%",
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wiremix', { float = true, size = {600, 400}, center = true })\"",
+    "on-click-right": "pwvucontrol",
+    "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "ignored-sinks": ["Easy Effects Sink"],
+  },
+}

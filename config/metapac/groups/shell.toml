@@ -13,7 +13,6 @@ arch = { packages = [
   "metapac",
   "android-tools",
   "unzip",
-  "rbw",
   "fastfetch",
   "eza",
   "wget",
@@ -26,12 +25,4 @@ arch = { packages = [
   "nix-zsh-completions",
   "fzf-tab",
   "zsh-nix-shell",
-
-  # Clipboard
-  "cliphist",
-  "wl-clipboard",
-
-  # Input & keyboard
-  "input-remapper-git",
-  "wtype",
 ] }

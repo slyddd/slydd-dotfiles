@@ -1,0 +1,19 @@
+#custom-battery {
+  padding: 0 15px;
+  min-width: 30px;
+  border-radius: 5px;
+}
+
+#custom-battery.charging,
+#custom-battery.charging.low {
+  margin: 0 5px;
+  background-color: alpha(@primary, 0.7);
+  color: @on_primary;
+}
+
+#custom-battery.low {
+  margin: 0 5px;
+  padding-left: 10px;
+  background-color: alpha(@error, 0.7);
+  color: @on_error;
+}

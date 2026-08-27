@@ -9,6 +9,7 @@ arch = { packages = [
   "kdeconnect",
   "nautilus",
   "discord",
+  "input-remapper-git",
 
   # CLI
   "ai-usagebar-bin",
@@ -17,4 +18,5 @@ arch = { packages = [
   "speedtest-cli",
   "wiremix",
   "wlctl-bin",
+  "rbw"
 ] }

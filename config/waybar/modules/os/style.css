@@ -1,0 +1,22 @@
+/* Os Module Style */
+#os {
+  padding: 4px;
+}
+
+#os.expanded {
+  padding: 4px 8px;
+}
+
+#os:hover {
+  border-radius: 5px;
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#custom-os {
+  min-width: 15px;
+}
+
+#custom-os-info {
+  font-family: Roboto;
+}

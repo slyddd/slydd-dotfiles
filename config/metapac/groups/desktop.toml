@@ -16,6 +16,7 @@ arch = { packages = [
 
   # Display managers & themes
   "ly",
+  "plymouth-theme-hexagon-2-git",
 
   # Cursors & icons
   "bibata-cursor-theme-bin",
@@ -31,18 +32,29 @@ arch = { packages = [
   "tesseract-data-spa",
   "imagemagick",
   "wl-screenrec-git",
-  "translate-shell",
+  "wl-clipboard",
+  "cliphist",
+  "wtype",
+  "ydotool",
   "awww",
   "matugen",
+  "translate-shell",
+  "brightnessctl",
 
   # UI Tool
   "rofi",
   "swayosd",
   "waybar-git",
   "waypaper",
+  "mako",
 
   # Waybar Modules
   "waybar-lyric",
+
+  # Rofi plugins
+  "rofi-emoji-git",
+  "rofi-rbw",
+  "rofi-games",
 
   # Fonts
   "noto-fonts-emoji",

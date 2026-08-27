@@ -1,6 +1,20 @@
 @import url("colors.css");
-@import url("top/style.css");
-@import url("bottom/style.css");
+
+/* Modules */
+@import url("modules/modules.css");
+@import url("modules/os/style.css");
+@import url("modules/hyprland/style.css");
+@import url("modules/caffeine/style.css");
+@import url("modules/privacy/style.css");
+@import url("modules/multimedia/style.css");
+@import url("modules/network/style.css");
+@import url("modules/bluetooth/style.css");
+@import url("modules/audio/style.css");
+@import url("modules/battery/style.css");
+@import url("modules/tray/style.css");
+@import url("modules/ai/style.css");
+@import url("modules/kdeconnect/style.css");
+@import url("modules/tailscale/style.css");
 
 * {
   font-size: 13px;
@@ -10,6 +24,9 @@
   margin: 0;
   min-height: 0;
   background-color: transparent;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 #waybar {
@@ -21,15 +38,33 @@
   color: @on_background;
 }
 
-#waybar.top .horizontal {
-  padding: 2px 8px;
+#waybar.top > box.horizontal {
+  padding: 5px 8px;
 }
 
-#waybar.bottom .horizontal {
+#waybar.bottom > box.horizontal {
   padding: 2px;
 }
 
-decoration {
+decoration,
+menu {
   border-radius: 5px;
   background-color: alpha(@background, 0.7);
+  color: @on_background;
+  font-family: Roboto;
+  padding: 5px 3px;
+}
+
+menu {
+  background-color: transparent;
+}
+
+menuitem {
+  padding: 3px 5px;
+  margin: 2px 0;
+}
+
+menuitem:hover {
+  border-radius: 5px;
+  background-color: alpha(@primary, 0.2);
 }

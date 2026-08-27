@@ -1,0 +1,25 @@
+// ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+// ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+// ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+// Rofi Configuration File
+
+configuration {
+  modes: "window,drun,power,clipboard,emoji";
+  font: "Roboto 12";
+  location: 0;
+	yoffset: 0;
+	xoffset: 0;
+	fixed-num-lines: true;
+	terminal: "kitty";
+	icon-theme: "kora";
+	drun-match-fields: "name,generic,exec,categories,keywords";
+	drun-display-format: "{name}";
+	sort: true;
+	sorting-method: "fzf";
+	window-format: "{t}";
+	click-to-exit: true;
+	max-history-size: 25;
+	window-thumbnail: true;
+}
+
+@theme "~/.config/rofi/themes/default.rasi"

@@ -9,3 +9,16 @@ hl.env("EDITOR", "nvim")
 hl.env("OPENROUTER_API_KEY", "$OPENROUTER_API_KEY")
 hl.env("OPENROUTER_ADMIN_API_KEY", "$OPENROUTER_ADMIN_API_KEY")
 hl.env("ZED_OPEN_AI_COMPATIBLE_EDIT_PREDICTION_API_KEY", "$ZED_OPEN_AI_COMPATIBLE_EDIT_PREDICTION_API_KEY")
+hl.env("BW_SESSION", "$BW_SESSION")
+
+-- Extract from ~/.zshrc_local the secret vars
+for line in io.lines(os.getenv("HOME") .. "/.zshrc_local") do
+  if line:match("^export") then
+    local var = line:match("export%s+([^=]+)")
+    local value = line:match("export%s+[^=]+=(.+)")
+    if value then
+      value = value:gsub("^['\"](.*)['\"]$", "%1")
+      hl.env(var, value)
+    end
+  end
+end

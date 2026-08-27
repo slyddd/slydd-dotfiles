@@ -1,0 +1,23 @@
+#caffeine.expanded {
+  background-color: @primary;
+  color: @on_primary;
+  border-radius: 5px;
+}
+
+#idle_inhibitor.icon {
+  min-width: 25px;
+  padding: 0 2px;
+}
+
+#idle_inhibitor.icon.activated {
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#idle_inhibitor.info {
+  font-family: Roboto;
+  font-weight: bold;
+  padding-right: 5px;
+}

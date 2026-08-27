@@ -1,5 +1,3 @@
-local mainMod = "SUPER"
-
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --output-volume raise"),
   { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume lower"),
@@ -18,3 +16,9 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("swayosd-client --media previous"), { l
 --- Keyboard Brightness
 hl.bind("SHIFT + XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --keyboard-brightness raise"))
 hl.bind("SHIFT + XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --keyboard-brightness lower"))
+
+--- Edit Dotfiles
+hl.bind(MainMod .. ' + I', hl.dsp.exec_cmd("$EDITOR_GUI $DOTFILES"))
+
+--- Enable caffeine mode
+hl.bind(MainMod .. ' + CTRL + Escape', hl.dsp.exec_cmd("pkill -SIGRTMIN+8 waybar"))

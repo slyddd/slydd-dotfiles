@@ -1,0 +1,80 @@
+// ╔═╗┬ ┬ ┬┌┬┐┌┬┐  ┌┬┐┌─┐┌┬┐┌─┐
+// ╚═╗│ └┬┘ ││ ││───│││ │ │ └─┐
+// ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
+// Rofi Grid Theme (For PowerMenu)
+
+@import "colors.rasi"
+* {
+  background-color: transparent;
+}
+
+window {
+  transparency: "real";
+  location: center;
+  anchor: center;
+  width: 400px;
+
+  padding: 0px;
+  border: 0px;
+  border-radius: 10px;
+  cursor: "default";
+  background-color: @background;
+}
+
+mainbox {
+  enabled: true;
+  spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  orientation: vertical;
+  children: [ "logo", "listview" ];
+}
+
+logo {
+  expand:                      false;
+  spacing:                     0px;
+  padding:                     200px;
+  background-color:            transparent;
+  background-image:            url("~/.face", width);
+}
+
+listview {
+  enabled: true;
+  columns: 3;
+  lines: 2;
+  cycle: true;
+  dynamic: true;
+  scrollbar: false;
+  layout: vertical;
+  reverse: false;
+  fixed-height: true;
+  fixed-columns: true;
+
+  spacing: 15px;
+  margin: 15px;
+  background-color: transparent;
+  cursor: "default";
+}
+
+element {
+  enabled: true;
+  padding: 30px 10px;
+  border-radius: 10px;
+  text-color: @on-background;
+  cursor: pointer;
+}
+element-text {
+  font: "feather bold 32";
+  background-color: transparent;
+  text-color: inherit;
+  cursor: inherit;
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+}
+element selected.normal {
+  background-color: var(primary);
+  text-color: var(on-primary);
+}

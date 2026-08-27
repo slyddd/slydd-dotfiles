@@ -1,0 +1,23 @@
+#audio {
+  border-radius: 5px;
+  padding: 0 4px;
+}
+
+#audio.expanded {
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#audio.expanded #pulseaudio.icon {
+  padding: 0;
+}
+
+#pulseaudio.icon {
+  min-width: 30px;
+  font-size: 16px;
+}
+
+#pulseaudio.level {
+  padding-right: 6px;
+  font-family: Roboto;
+}

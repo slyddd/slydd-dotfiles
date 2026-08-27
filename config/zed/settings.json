@@ -1,7 +1,18 @@
 {
+  "format_on_save": "on",
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "cli_default_open_behavior": "new_window",
   "edit_predictions": {
+    "codestral": {
+      "model": "codestral-latest"
+    },
     "mode": "subtle",
-    "provider": "copilot",
+    "provider": "codestral",
     "open_ai_compatible_api": {
       "prompt_format": "codestral",
       "model": "mistralai/codestral-2508@preset/inline-completion",
@@ -9,6 +20,16 @@
     },
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4-flash",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4-flash",
+      "enable_thinking": true
+    },
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
@@ -22,6 +43,7 @@
     "tree_view": true,
   },
   "project_panel": {
+    "folder_icons": true,
     "hide_root": true,
     "indent_guides": {
       "show": "never",
@@ -61,7 +83,7 @@
   "code_lens": "on",
   "inlay_hints": {
     "show_background": true,
-    "enabled": true,
+    "enabled": false,
   },
   "tab_size": 2,
   "vim": {
@@ -95,7 +117,7 @@
   "vim_mode": true,
 
   // Private values
-  "redact_private_values": true,
+  "redact_private_values": false,
 
   "buffer_font_features": {
     "calt": true,
