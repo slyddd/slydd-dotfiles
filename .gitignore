@@ -16,6 +16,7 @@ config/kitty/themes/noctalia.conf
 config/btop/themes/noctalia.theme
 config/niri/noctalia.kdl
 config/opencode/themes/matugen.json
+config/nvim/lua/matugen.lua
 
 # Calcure data files
 config/calcure/*.csv
