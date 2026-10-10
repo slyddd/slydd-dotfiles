@@ -1,20 +1,7 @@
 @import url("colors.css");
 
-/* Modules */
+/* all module styles */
 @import url("modules/modules.css");
-@import url("modules/os/style.css");
-@import url("modules/niri/style.css");
-@import url("modules/caffeine/style.css");
-@import url("modules/privacy/style.css");
-@import url("modules/multimedia/style.css");
-@import url("modules/network/style.css");
-@import url("modules/bluetooth/style.css");
-@import url("modules/audio/style.css");
-@import url("modules/battery/style.css");
-@import url("modules/tray/style.css");
-@import url("modules/ai/style.css");
-@import url("modules/kdeconnect/style.css");
-@import url("modules/tailscale/style.css");
 
 * {
   font-size: 13px;
