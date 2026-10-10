@@ -1,0 +1,23 @@
+{
+  "skill_name": "arch-dots",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "ponme un bind Mod+B en niri para mostrar/ocultar la barra de noctalia, igual que el estilo de los demas binds",
+      "expected_output": "Edits config/niri/binds/ui.kdl following the existing convention (hotkey-overlay-title + spawn-sh 'noctalia msg bar-toggle'), validates with 'niri validate', does not touch noctalia state files",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "instala xournalpp y declara el paquete para que metapac no lo borre despues",
+      "expected_output": "Adds \"xournalpp\" to the right metapac group toml (config/metapac/groups/apps.toml), runs 'metapac sync', does NOT just paru -S without declaring",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "quiero empezar a gestionar la configuracion de mpv en mis dots",
+      "expected_output": "Creates config/mpv/ in the repo and symlinks ~/.config/mpv -> ../.arch/config/mpv (directory-level symlink like the rest); does NOT run 'stow mpv' (which would flatten files into ~/.config); verifies with a 'stow -n' dry run",
+      "files": []
+    }
+  ]
+}

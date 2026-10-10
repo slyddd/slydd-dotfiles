@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "theme": {
+    "name": "matugen",
+    "mode": "system"
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": false,
+    "thinking": "hide",
+    "new_location": "launch",
+    "image_preview": false,
+    "markdown": "rendered"
+  },
+  "animations": true,
+  "attention": {
+    "notifications": true,
+    "sound": true
+  },
+  "tabs": {
+    "scope": "cwd",
+    "layout": "horizontal"
+  },
+  "keybinds": {
+    "agent.cycle": "tab",
+    "prompt.autocomplete.complete": "ctrl+n"
+  }
+}
