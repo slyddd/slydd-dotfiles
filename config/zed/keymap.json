@@ -5,12 +5,17 @@
       "space e": "project_panel::ToggleFocus",
       "space space": "tab_switcher::Toggle",
       "space c": "editor::ToggleComments",
+      "space l": "editor::ToggleCodeLens",
+      "space r": "editor::FindAllReferences",
+      "space i": "editor::GoToImplementation",
     },
   },
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
       "space c": "editor::ToggleComments",
+      "space r": "editor::FindAllReferences",
+      "space i": "editor::GoToImplementation",
     },
   },
   {
@@ -35,6 +40,9 @@
       "y": "project_panel::Copy",
       "p": "project_panel::Paste",
       "x": "project_panel::Cut",
+      ".": "project_panel::ToggleHideGitIgnore",
+      "ctrl-.": "project_panel::ToggleHideHidden",
+      "tab": "project_panel::CollapseAllEntries",
     },
   },
   {

@@ -53,6 +53,8 @@ source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source $PLUGINS/zsh-nix-shell/nix-shell.plugin.zsh
 source <(fzf --zsh)
 source <(zeditor --completions zsh)
+source <(niri completions zsh)
+source <(noctalia completions zsh)
 
 # Custom prompts
 export SUDO_PROMPT="󰈸 Deploying root access for %u. Password pls: "

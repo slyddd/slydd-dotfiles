@@ -1,14 +1,30 @@
+#custom-ai-chat {
+  border-radius: 5px;
+  padding: 5px 10px 5px 6px;
+}
+
+#custom-ai-chat:hover {
+  background-color: @primary;
+  color: @on_primary;
+}
+
+#ai {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
 #ai .warn {
+  color: @error;
+}
+
+#ai.expanded .warn {
   background-color: @error;
   color: @on_error;
 }
 
-#ai.expanded #custom-ai-usage {
-  border-radius: 10px 0 0 10px;
-}
-
-#ai.expanded #custom-ai-left {
-  border-radius: 0 10px 10px 0;
+#ai.expanded {
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #custom-ai-usage {
@@ -23,6 +39,4 @@
 #custom-ai-left {
   font-family: Roboto;
   border-radius: 10px;
-  color: @on_background;
-  background-color: alpha(@background, 0.7);
 }

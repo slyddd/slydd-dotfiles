@@ -1,26 +1,20 @@
 {
   "group/multimedia": {
     "orientation": "horizontal",
-    "modules": ["image#album-art", "custom/info", "custom/lyrics"],
+    "modules": ["mpris", "custom/lyrics"],
   },
 
   // Modules
-  "image#album-art": {
-    "exec": "$HOME/.config/waybar/modules/multimedia/multimedia.sh --cover",
-    "size": 30,
-    "interval": 30,
-  },
-
-  "custom/info": {
-    "exec": "$HOME/.config/waybar/modules/multimedia/multimedia.sh --info",
-    "return-type": "json",
-    "format": "{icon} {text}",
-    "format-icons": {
-      "paused": " ",
+  "mpris": {
+    "format": "{status_icon} {artist} - {title}",
+    "tooltip-format": "{title}\n{album}\n{artist}",
+    "player-icons": {
+      "default": "󰎆",
     },
-    "hide-empty-text": true,
-    "interval": 30,
-    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('spotify', { workspace = 'special:minimize' })\"",
+    "status-icons": {
+      "paused": "󰏤 ",
+      "stopped": "󰓛 ",
+    },
   },
 
   "custom/lyrics": {

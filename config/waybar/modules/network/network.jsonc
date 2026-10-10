@@ -18,8 +18,7 @@
     "tooltip-format": "{ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wlctl', { float = true, size = {600, 600}, center = true })\"",
-    "on-click-right": "nm-connection-editor",
+    "on-click": "kitty -T 'Impala' -e wlctl",
   },
 
   "network#info": {
@@ -29,7 +28,6 @@
     "tooltip-format": "{ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('kitty -e wlctl', { float = true, size = {600, 600}, center = true })\"",
-    "on-click-right": "nm-connection-editor",
+    "on-click": "kitty -T 'Impala' -e wlctl",
   },
 }

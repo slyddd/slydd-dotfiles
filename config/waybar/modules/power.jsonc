@@ -5,6 +5,6 @@
     "format-icons": {
       "default": " ⏻",
     },
-    "on-click": "rofi -show power -theme grid",
+    "on-click": "noctalia msg panel-toggle session",
   },
 }

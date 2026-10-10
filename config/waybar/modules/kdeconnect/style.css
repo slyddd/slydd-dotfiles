@@ -1,16 +1,16 @@
 #custom-kdeconnect {
-  padding: 10px 15px;
-  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
   color: @on_background;
-  background-color: alpha(@background, 0.7);
 }
 
 #custom-kdeconnect:hover {
-  color: @primary;
-  opacity: 0.8;
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #custom-kdeconnect.low {
-  background-color: alpha(@error, 0.7);
+  background-color: @error;
   color: @on_error;
 }

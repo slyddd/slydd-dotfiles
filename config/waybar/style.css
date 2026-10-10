@@ -3,7 +3,7 @@
 /* Modules */
 @import url("modules/modules.css");
 @import url("modules/os/style.css");
-@import url("modules/hyprland/style.css");
+@import url("modules/niri/style.css");
 @import url("modules/caffeine/style.css");
 @import url("modules/privacy/style.css");
 @import url("modules/multimedia/style.css");
@@ -28,14 +28,26 @@
   text-shadow: none;
   box-shadow: none;
 }
+window.HDMI-A-1 * {
+  font-size: 10px;
+}
 
 #waybar {
   font-family: Fira Code Nerd Font;
+  background-color: @background;
+  color: @on_background;
 }
 
-#waybar.top {
-  background-color: alpha(@background, 0.9);
-  color: @on_background;
+#waybar.radius {
+  background-color: transparent;
+  box-shadow: 0 0 0 2000px @background;
+}
+
+#waybar.top.radius {
+  border-radius: 20px 20px 0px 0px;
+}
+#waybar.bottom.radius {
+  border-radius: 0px 0px 20px 20px;
 }
 
 #waybar.top > box.horizontal {
@@ -49,7 +61,7 @@
 decoration,
 menu {
   border-radius: 5px;
-  background-color: alpha(@background, 0.7);
+  background-color: @background;
   color: @on_background;
   font-family: Roboto;
   padding: 5px 3px;
@@ -66,5 +78,5 @@ menuitem {
 
 menuitem:hover {
   border-radius: 5px;
-  background-color: alpha(@primary, 0.2);
+  background-color: @primary;
 }

@@ -5,6 +5,7 @@
     "format-icons": {
       "default": "",
     },
-    "on-click": "waypaper",
+    "on-click": "noctalia msg panel-toggle wallpaper",
+    "on-click-right": "noctalia msg panel-toggle noctalia/wallhaven:browser",
   },
 }

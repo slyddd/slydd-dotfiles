@@ -1,15 +1,18 @@
 /* General Module Style */
 #custom-tailscale {
-  padding: 10px 15px;
+  padding: 0px 12px 0px 10px;
   border-radius: 10px;
-  color: @on_background;
-  background-color: alpha(@background, 0.7);
+  margin-left: 5px;
 }
 
 #custom-tailscale:hover {
-  color: @primary;
+  background-color: @primary;
+}
+
+#custom-tailscale:hover label {
+  color: @on_primary;
 }
 
 #custom-tailscale.stopped {
-  color: alpha(@on_background, 0.7);
+  opacity: 0.4;
 }

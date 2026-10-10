@@ -1,5 +1,6 @@
 #!/bin/bash
 
+function get_ai_usage {
 API=$(echo $OPENROUTER_ADMIN_API_KEY)
 DATA=$(curl https://openrouter.ai/api/v1/credits \
   -H "Authorization: Bearer $OPENROUTER_ADMIN_API_KEY" -s | jq .)
@@ -10,9 +11,9 @@ USAGE=$(echo $DATA | jq .data.total_usage)
 PERCENTAGE=$(echo "scale=2; ($USAGE * 100) / $CREDITS" | bc)
 LEFT=$(echo "scale=2; ($CREDITS - $USAGE) / 1" | bc)
 
-text="󰚩   $PERCENTAGE%"
+text="󰚩   \$$LEFT"
 if [[ $1 == "--coin" ]]; then
-  text="\$$LEFT"
+  text="$PERCENTAGE%"
 fi
 
 tooltip="Total:\t\$$CREDITS"
@@ -22,3 +23,6 @@ if [ $(echo "$PERCENTAGE > 85" | bc) -eq 1 ]; then
 fi
 
 echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\", \"class\": \"$class\"}"
+}
+
+get_ai_usage $1

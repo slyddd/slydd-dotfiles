@@ -3,7 +3,7 @@
 # ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
 # Starship Configuration File
 
-format = "$os$nix_shell$username$directory$git_status$character "
+format = "$os$nix_shell$username$directory$git_status$git_branch$character "
 continuation_prompt = "-> "
 add_newline = true
 
@@ -48,6 +48,13 @@ modified = "!$count "
 staged = "+$count "
 renamed = "»$count "
 deleted = "✘$count "
+
+[git_branch]
+style = "fg:yellow"
+symbol = ' '
+format = "[$symbol$branch(:$remote_branch)]($style)"
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
 
 [character]
 format = " [$symbol](fg:blue)"

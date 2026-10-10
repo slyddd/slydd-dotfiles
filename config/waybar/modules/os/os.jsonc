@@ -15,12 +15,12 @@
     "format-icons": {
       "default": "",
     },
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "noctalia msg panel-toggle launcher",
   },
 
   "custom/os-info": {
     "exec": "echo \"$USER@$HOSTNAME\"",
     "interval": "once",
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "noctalia msg panel-toggle launcher",
   },
 }

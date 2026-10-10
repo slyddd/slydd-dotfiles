@@ -11,7 +11,7 @@
   "custom/ai-usage": {
     "exec": "$HOME/.config/waybar/modules/ai/ai-usage.sh",
     "tooltip": true,
-    "interval": "30",
+    "interval": 1,
     "return-type": "json",
   },
 
@@ -19,6 +19,6 @@
     "exec": "$HOME/.config/waybar/modules/ai/ai-usage.sh --coin",
     "return-type": "json",
     "tooltip": true,
-    "interval": "30",
+    "interval": 1,
   },
 }

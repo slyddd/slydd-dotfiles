@@ -4,12 +4,12 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
-    "anthropic_retention": false
+    "anthropic_retention": false,
   },
   "cli_default_open_behavior": "new_window",
   "edit_predictions": {
     "codestral": {
-      "model": "codestral-latest"
+      "model": "codestral-latest",
     },
     "mode": "subtle",
     "provider": "codestral",
@@ -22,13 +22,13 @@
   "agent": {
     "inline_assistant_model": {
       "provider": "openrouter",
-      "model": "deepseek/deepseek-v4-flash",
-      "enable_thinking": false
+      "model": "deepseek/deepseek-v4.1-flash",
+      "enable_thinking": false,
     },
     "default_model": {
       "provider": "openrouter",
       "model": "deepseek/deepseek-v4-flash",
-      "enable_thinking": true
+      "enable_thinking": true,
     },
     "dock": "right",
     "favorite_models": [],
@@ -43,7 +43,8 @@
     "tree_view": true,
   },
   "project_panel": {
-    "folder_icons": true,
+    "folder_indicator": "icon",
+    "hide_hidden": false,
     "hide_root": true,
     "indent_guides": {
       "show": "never",
@@ -80,11 +81,7 @@
     },
   },
   "colorize_brackets": true,
-  "code_lens": "on",
-  "inlay_hints": {
-    "show_background": true,
-    "enabled": false,
-  },
+  "code_lens": "off",
   "tab_size": 2,
   "vim": {
     "cursor_shape": {
@@ -110,7 +107,7 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "theme": "Matugen Dark",
+  "theme": "Noctalia Dark",
   "when_closing_with_no_tabs": "keep_window_open",
 
   // Vim
@@ -124,4 +121,16 @@
   },
 
   "max_tabs": 10,
+
+  "languages": {
+    "Shell Script": {
+      "formatter": {
+        "external": {
+          "command": "npx",
+          "arguments": ["prettier", "--parser", "sh"],
+        },
+      },
+      "format_on_save": "on",
+    },
+  },
 }
