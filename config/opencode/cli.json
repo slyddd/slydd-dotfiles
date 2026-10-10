@@ -5,15 +5,19 @@
     "mode": "system"
   },
   "diffs": {
-    "wrap": "word"
+    "wrap": "word",
+    "single": false,
+    "view": "auto"
   },
   "session": {
     "sidebar": "auto",
-    "scrollbar": false,
+    "scrollbar": true,
     "thinking": "hide",
     "new_location": "launch",
     "image_preview": false,
-    "markdown": "rendered"
+    "markdown": "rendered",
+    "grouping": "auto",
+    "permissions": "prompt"
   },
   "animations": true,
   "attention": {
@@ -22,10 +26,21 @@
   },
   "tabs": {
     "scope": "cwd",
-    "layout": "horizontal"
+    "layout": "horizontal",
+    "mode": "auto",
+    "indicators": "status"
   },
   "keybinds": {
     "agent.cycle": "tab",
     "prompt.autocomplete.complete": "ctrl+n"
+  },
+  "scroll": {
+    "acceleration": true
+  },
+  "prompt": {
+    "image_preview": true
+  },
+  "terminal": {
+    "copy": "select"
   }
 }
