@@ -1,4 +1,0 @@
-background-color={{ colors.background.default.hex_alpha | to_color | set_alpha: 0.3 }}
-text-color={{ colors.on_background.default.hex }}
-border-color={{ colors.primary.default.hex }}
-progress-color={{ colors.primary.default.hex }}
