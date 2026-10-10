@@ -7,7 +7,9 @@ arch = { packages = [
   # Audio utilities
   "alsa-utils",
   "pwvucontrol",
+  "wiremix",
 
   # Audio applications
   "spotify",
+  "spicetify-cli",
 ] }

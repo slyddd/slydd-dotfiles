@@ -1,6 +1,9 @@
 arch = { packages = [
-  # Bluetooth
-  "blueman",
+  # Bluetooth stack
   "bluez",
   "bluez-utils",
+  "blueman",
+
+  # Bluetooth TUI
+  "bluetui",
 ] }

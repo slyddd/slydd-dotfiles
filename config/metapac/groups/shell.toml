@@ -5,28 +5,36 @@ arch = { packages = [
   "starship",
   "zsh",
 
-  # CLI tools
-  "7zip",
-  "bc",
-  "bat",
-  "fzf",
-  "btop",
-  "stow",
+  # Dotfiles management
   "metapac",
-  "android-tools",
-  "unzip",
-  "fastfetch",
+  "stow",
+
+  # CLI tools
+  "bat",
+  "bc",
+  "btop",
   "eza",
-  "wget",
+  "fastfetch",
+  "fzf",
   "jq",
-  "nix",
+  "wget",
+
+  # Archives & torrents
+  "7zip",
   "rtorrent",
   "unrar",
+  "unzip",
+
+  # Devices
+  "android-tools",
+
+  # Nix
+  "nix",
 
   # Zsh plugins
-  "zsh-autosuggestions",
-  "zsh-syntax-highlighting",
-  "nix-zsh-completions",
   "fzf-tab",
+  "nix-zsh-completions",
+  "zsh-autosuggestions",
   "zsh-nix-shell",
+  "zsh-syntax-highlighting",
 ] }

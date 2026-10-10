@@ -1,46 +1,54 @@
 arch = { packages = [
-  # Desktop environments
+  # Compositor
   "niri",
-  "plasma-desktop",
 
-  # Display server & portals
+  # Session shell (bar, greeter, idle inhibit)
+  "noctalia",
+  "noctalia-greeter",
+  "waybar-git",
+  "waybar-lyric-git",
+  "wayland-pipewire-idle-inhibit",
+
+  # KDE & Qt integration
+  "plasma-desktop",
+  "systemsettings",
+  "plasma-integration",
+  "qt6ct-kde",
+  "qt5-tools",
+  "qt5-websockets",
+  "qt6-websockets",
+  "qt6-multimedia-ffmpeg",
+  "qt6-virtualkeyboard",
+
+  # Portals
   "xdg-desktop-portal-gnome",
   "xdg-desktop-portal-wlr",
 
-  # Display managers & themes
-  "noctalia-greeter",
-  "plymouth-theme-hexagon-2-git",
+  # Boot & GTK themes, cursors & icons
   "grub-theme-bsol-git",
+  "plymouth-theme-hexagon-2-git",
   "adw-gtk-theme",
-
-  # Cursors & icons
   "bibata-cursor-theme-bin",
   "kora-icon-theme",
 
-  # Window manager utilities
-  "nwg-look",
-  "systemsettings",
-  "plasma-integration",
-  "wev",
-  "imagemagick",
+  # Screenshots & recording
+  "spectacle",
   "wl-screenrec-git",
   "wlctl-bin",
-  "spectacle",
-  "wl-clipboard",
+
+  # Clipboard
   "cliphist",
+  "wl-clipboard",
+
+  # Input
   "wtype",
   "ydotool",
+  "wev",
+
+  # Appearance & misc
   "hyprpicker",
-
-  # UI Tool
-  "waybar-git",
-  "noctalia",
-
-  # Idle inhibit during media playback
-  "wayland-pipewire-idle-inhibit",
-
-  # Waybar Modules
-  "waybar-lyric-git",
+  "imagemagick",
+  "nwg-look",
 
   # Fonts
   # "noto-fonts-emoji",
@@ -48,12 +56,4 @@ arch = { packages = [
   "ttf-firacode-nerd",
   "ttf-ms-fonts",
   "ttf-roboto",
-
-  # Qt libraries
-  "qt6-multimedia-ffmpeg",
-  "qt6-virtualkeyboard",
-  "qt5-tools",
-  "qt5-websockets",
-  "qt6-websockets",
-  "qt6ct-kde"
 ] }
