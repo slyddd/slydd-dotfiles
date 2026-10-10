@@ -41,15 +41,11 @@ layer-rule {
 
 // Opacity apps
 window-rule {
-  match app-id="zed"
+  match app-id="zed|zen|kitty"
   opacity 1.0
 }
 window-rule {
-  match app-id="zen"
-  opacity 1.0
-}
-window-rule {
-  match app-id="ferdium"
+  match app-id="discord|ferdium"
   opacity 0.96
 }
 
