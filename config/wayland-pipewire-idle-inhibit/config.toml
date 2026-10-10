@@ -1,0 +1,16 @@
+# wayland-pipewire-idle-inhibit
+#
+# Noctalia mantiene abierto un stream persistente ("noctalia-sound") incluso en
+# silencio, y el stream del TTS de opencode hace lo mismo. Como el programa
+# considera activo cualquier enlace PipeWire activo, esos streams mantendrían el
+# idle inhibido para siempre. Se ignoran por nombre; solo la reproducción real
+# (Spotify, vídeos, etc.) debe inhibir el idle.
+verbosity = "WARN"
+media_minimum_duration = 5
+idle_inhibitor = "wayland"
+
+[[node_blacklist]]
+name = "noctalia-sound"
+
+[[node_blacklist]]
+name = "opencode"

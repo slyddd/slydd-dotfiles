@@ -7,6 +7,7 @@ zsh_history
 
 # ignore .env
 .env
+secrets.kdl
 
 # Calcure data files
 config/calcure/*.csv

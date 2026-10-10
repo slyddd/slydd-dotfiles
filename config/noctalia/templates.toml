@@ -1,0 +1,13 @@
+[theme.templates]
+enable_builtin_templates   = true
+enable_community_templates = true
+builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "qt" ]
+community_ids = [ "zen-browser", "vscode" ]
+
+[theme.templates.user.waybar]
+input_path  = "~/.config/noctalia/templates/colors.css"
+output_path = "~/.config/waybar/colors.css"
+
+[theme.templates.user.zed]
+input_path  = "~/.config/noctalia/templates/zed.json"
+output_path = "~/.config/zed/themes/noctalia.json"
