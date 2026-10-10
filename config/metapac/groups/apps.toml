@@ -4,14 +4,12 @@ arch = { packages = [
   "zen-browser-bin",
 
   # Messaging
-  "discord",
   "ferdium-bin",
   "kdeconnect",
   "vesktop-bin",
 
   # Media
   "mpv",
-  "obs-studio",
 
   # Files & devices
   "nautilus",
