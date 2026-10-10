@@ -9,6 +9,13 @@ zsh_history
 .env
 secrets.kdl
 
+# Noctalia-generated theme files (regenerated on every theme change)
+config/waybar/colors.css
+config/zed/themes/noctalia.json
+config/kitty/themes/noctalia.conf
+config/btop/themes/noctalia.theme
+config/niri/noctalia.kdl
+
 # Calcure data files
 config/calcure/*.csv
 config/calcure/*.log
