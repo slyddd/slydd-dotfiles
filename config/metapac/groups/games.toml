@@ -9,4 +9,9 @@ arch = { packages = [
   "retroarch-assets-xmb",
   "steam-rom-manager-bin",
   "wine",
+  "gamescope",
+
+  # Libs
+  "lib32-vulkan-radeon",
+  "vulkan-radeon",
 ] }

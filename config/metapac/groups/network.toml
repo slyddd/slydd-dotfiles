@@ -1,8 +1,11 @@
 arch = { packages = [
+  # Network stack
+  "networkmanager",
+  "network-manager-applet",
+
   # Network utilities
   "openssh",
   "tailscale",
   "ufw",
   "syncthing",
-  "networkmanager",
 ] }

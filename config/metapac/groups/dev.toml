@@ -1,16 +1,28 @@
 arch = { packages = [
   # Runtime
   "bun",
+  "pyenv",
+  "jdk-openjdk",
 
   # Development tools
   "neovim",
   "zed",
-  "cursor-bin",
+  "opencode",
+  "opencode-desktop-bin",
+
+  # Containers
+  "docker",
+  "docker-buildx",
 
   # CLI
   "git",
   "github-cli",
+  "jadx",
 ] }
 
 # Bun packages (development tools)
-bun = { packages = ["eslint", "prettier"] }
+bun = { packages = [
+  "eslint",
+  "prettier",
+  "prettier-plugin-sh",
+] }

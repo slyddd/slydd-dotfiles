@@ -1,22 +1,21 @@
 arch = { packages = [
   # Browsers
   "zen-browser-bin",
+  "chromium",
 
   # Utilities
-  "bitwarden",
   "ferdium-bin",
-  "obsidian",
   "kdeconnect",
   "nautilus",
   "discord",
-  "input-remapper-git",
+  "vesktop-bin",
+  "spicetify-cli",
+  "scrcpy",
+  "mpv",
+  "obs-studio",
 
   # CLI
-  "ai-usagebar-bin",
   "bluetui",
-  "calcure",
-  "speedtest-cli",
   "wiremix",
-  "wlctl-bin",
-  "rbw"
+  "bitwarden-cli"
 ] }

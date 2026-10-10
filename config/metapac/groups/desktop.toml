@@ -1,22 +1,17 @@
 arch = { packages = [
   # Desktop environments
-  "cosmic-session",
-  "hyprland",
-
-  # Hyprland Utils
-  "hypridle",
-  "hyprlock",
-  "hyprpolkitagent",
-  "hyprsunset",
-  "hyprpicker",
+  "niri",
+  "plasma-desktop",
 
   # Display server & portals
-  "xdg-desktop-portal-cosmic",
-  "xdg-desktop-portal-hyprland",
+  "xdg-desktop-portal-gnome",
+  "xdg-desktop-portal-wlr",
 
   # Display managers & themes
-  "ly",
+  "noctalia-greeter",
   "plymouth-theme-hexagon-2-git",
+  "grub-theme-bsol-git",
+  "adw-gtk-theme",
 
   # Cursors & icons
   "bibata-cursor-theme-bin",
@@ -24,40 +19,32 @@ arch = { packages = [
 
   # Window manager utilities
   "nwg-look",
+  "systemsettings",
+  "plasma-integration",
   "wev",
-  "grim",
-  "slurp",
-  "tesseract",
-  "tesseract-data-eng",
-  "tesseract-data-spa",
   "imagemagick",
   "wl-screenrec-git",
+  "wlctl-bin",
+  "spectacle",
   "wl-clipboard",
   "cliphist",
   "wtype",
   "ydotool",
-  "awww",
-  "matugen",
-  "translate-shell",
-  "brightnessctl",
+  "hyprpicker",
 
   # UI Tool
-  "rofi",
-  "swayosd",
   "waybar-git",
-  "waypaper",
-  "mako",
+  "noctalia",
+
+  # Idle inhibit during media playback
+  "wayland-pipewire-idle-inhibit",
 
   # Waybar Modules
-  "waybar-lyric",
-
-  # Rofi plugins
-  "rofi-emoji-git",
-  "rofi-rbw",
-  "rofi-games",
+  "waybar-lyric-git",
 
   # Fonts
-  "noto-fonts-emoji",
+  # "noto-fonts-emoji",
+  "ttf-apple-emoji",
   "ttf-firacode-nerd",
   "ttf-ms-fonts",
   "ttf-roboto",
@@ -68,4 +55,5 @@ arch = { packages = [
   "qt5-tools",
   "qt5-websockets",
   "qt6-websockets",
+  "qt6ct-kde"
 ] }
