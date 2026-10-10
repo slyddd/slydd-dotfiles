@@ -6,18 +6,17 @@
 local M = {}
 
 M.base46 = {
-  theme = "espresso",
-  transparency = true,
-  hl_add = {
-    NvimTreeNormal = {
-      bg = "none",
-    },
-  },
+  theme = "noctalia",
+  transparency = false,
 
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+  -- base46 paints the file tree panel darker (darker_black); keep it
+  -- consistent with the editor background
+  hl_override = {
+    NvimTreeNormal = { bg = "black" },
+    NvimTreeNormalNC = { bg = "black" },
+    NvimTreeEndOfBuffer = { fg = "black", bg = "black" },
+    NvimTreeWinSeparator = { fg = "black", bg = "black" },
+  },
 }
 
 M.nvdash = { load_on_startup = true }
