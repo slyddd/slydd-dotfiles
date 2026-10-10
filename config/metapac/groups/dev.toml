@@ -18,11 +18,21 @@ arch = { packages = [
   "git",
   "github-cli",
   "jadx",
+
+  # Linters
+  "shellcheck",
+  "yamllint",
+  "taplo-cli",
 ] }
 
 # Bun packages (development tools)
 bun = { packages = [
   "eslint",
+  "eslint_d",
+  "jsonlint",
+  "typescript",
+  "typescript-language-server",
+  "vscode-langservers-extracted",
   "prettier",
   "prettier-plugin-sh",
 ] }
