@@ -18,6 +18,13 @@ layout {
     color "#0007"
   }
 }
+blur {
+    // off
+    passes 2
+    offset 2
+    noise 0.02
+    saturation 1
+}
 
 cursor {
   xcursor-theme "Bibata-Modern-Ice"
