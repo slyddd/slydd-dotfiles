@@ -3,7 +3,7 @@
 # ╚═╝┴─┘┴ ─┴┘─┴┘  ─┴┘└─┘ ┴ └─┘
 # Starship Configuration File
 
-format = "$os$nix_shell$username$directory$git_status$git_branch$character "
+format = "$os$hostname$nix_shell$username$directory$git_status$git_branch$character "
 continuation_prompt = "-> "
 add_newline = true
 
@@ -35,6 +35,12 @@ show_always = true
 
 [username.aliases]
 root = "󰈸"
+
+[hostname]
+ssh_only = true
+format = ' [\[$ssh_symbol $hostname\]]($style)'
+style = "fg:blue"
+ssh_symbol = '󰌆'
 
 [git_status]
 style = "fg:yellow"

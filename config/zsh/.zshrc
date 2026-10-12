@@ -4,14 +4,14 @@
 # ZSH Configuration File
 
 export PATH="$HOME/.local/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$PATH"
-export DOTFILES="$HOME/.arch"
+export DOTFILES="$HOME/.server"
 export PLUGINS="/usr/share/zsh/plugins"
 export ZSH="/usr/share/oh-my-zsh"
 export EDITOR="nvim"
 export EDITOR_GUI="zeditor"
 
 # Local secret config
-[[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
+[[ -f $HOME/.config/zsh/.env.sh ]] && source $HOME/.config/zsh/.env.sh
 
 ZSH_THEME="robbyrussell"
 
@@ -52,9 +52,6 @@ source $PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source $PLUGINS/zsh-nix-shell/nix-shell.plugin.zsh
 source <(fzf --zsh)
-source <(zeditor --completions zsh)
-source <(niri completions zsh)
-source <(noctalia completions zsh)
 
 # Custom prompts
 export SUDO_PROMPT="󰈸 Deploying root access for %u. Password pls: "
