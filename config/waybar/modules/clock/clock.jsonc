@@ -1,9 +1,0 @@
-{
-  "clock": {
-    "interval": 60,
-    "format": "{:%a, %d %b · %H:%M}",
-    "max-length": 25,
-    "tooltip": false,
-    "on-click": "noctalia msg panel-toggle control-center calendar",
-  },
-}

@@ -1,5 +1,0 @@
-spawn-at-startup "noctalia"
-spawn-at-startup "waybar"
-spawn-at-startup "kdeconnect-indicator"
-spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
-spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
