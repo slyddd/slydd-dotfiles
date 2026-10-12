@@ -36,6 +36,8 @@ arch = { packages = [
   # Snapshots
   "snap-pac",
   "snapper",
+  "timeshift",
+  "timeshift-autosnap",
 
   # Package management
   "paru-git",
