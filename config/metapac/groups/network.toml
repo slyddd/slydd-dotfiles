@@ -7,4 +7,5 @@ arch = { packages = [
   "tailscale",
   "ufw",
   "syncthing",
+  "cloudflared"
 ] }

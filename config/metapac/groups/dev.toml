@@ -11,6 +11,7 @@ arch = { packages = [
   # Containers
   "docker",
   "docker-buildx",
+  "docker-compose",
   "lazydocker",
 
   # CLI

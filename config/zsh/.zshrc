@@ -8,7 +8,7 @@ export DOTFILES="$HOME/.server"
 export PLUGINS="/usr/share/zsh/plugins"
 export ZSH="/usr/share/oh-my-zsh"
 export EDITOR="nvim"
-export EDITOR_GUI="zeditor"
+export Composes="$HOME/Composes"
 
 # Local secret config
 [[ -f $HOME/.config/zsh/.env.sh ]] && source $HOME/.config/zsh/.env.sh
