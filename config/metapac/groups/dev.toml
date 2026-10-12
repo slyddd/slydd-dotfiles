@@ -6,18 +6,16 @@ arch = { packages = [
 
   # Development tools
   "neovim",
-  "zed",
   "opencode",
-  "opencode-desktop-bin",
 
   # Containers
   "docker",
   "docker-buildx",
+  "lazydocker",
 
   # CLI
   "git",
   "github-cli",
-  "jadx",
 
   # Linters
   "shellcheck",

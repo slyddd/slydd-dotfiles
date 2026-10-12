@@ -1,6 +1,5 @@
 arch = { packages = [
-  # Shell & terminal
-  "kitty",
+  # Shell
   "oh-my-zsh-git",
   "starship",
   "zsh",
@@ -16,6 +15,7 @@ arch = { packages = [
   "eza",
   "fastfetch",
   "fzf",
+  "imagemagick",
   "jq",
   "wget",
 
